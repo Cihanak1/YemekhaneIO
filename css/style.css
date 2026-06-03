@@ -1,0 +1,884 @@
+/* ============================================================
+   GÜNLÜK MENÜ PANOSU — STYLE.CSS  v3.0
+   Tema: Soft-Dark + Glassmorphism + Premium Animations
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ── CSS DESIGN TOKENS ─────────────────────────────────────── */
+:root {
+  /* Background */
+  --bg-base:      #080b14;
+  --bg-surface:   #0d1120;
+  --bg-card:      rgba(18, 22, 40, 0.75);
+  --bg-card-solid:#121628;
+  --bg-item:      rgba(26, 30, 52, 0.8);
+  --bg-item-hover:rgba(34, 39, 65, 0.9);
+
+  /* Accents */
+  --accent-morning-1: #f59e0b;
+  --accent-morning-2: #fbbf24;
+  --accent-morning-3: #fde68a;
+  --accent-evening-1: #8b5cf6;
+  --accent-evening-2: #a78bfa;
+  --accent-evening-3: #ddd6fe;
+  --accent-info:      #06b6d4;
+  --accent-success:   #10b981;
+  --accent-danger:    #f43f5e;
+
+  /* Glow Colors */
+  --glow-morning: rgba(245, 158, 11, 0.22);
+  --glow-evening: rgba(139, 92, 246, 0.22);
+
+  /* Text */
+  --text-primary:   #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted:     #475569;
+  --text-label:     #64748b;
+
+  /* Borders */
+  --border-subtle:  rgba(255,255,255,0.05);
+  --border-card:    rgba(255,255,255,0.07);
+
+  /* Shadows */
+  --shadow-card:  0 8px 32px rgba(0,0,0,0.5), 0 2px 8px rgba(0,0,0,0.4);
+  --shadow-item:  0 2px 8px rgba(0,0,0,0.3);
+
+  /* Radius */
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+
+  /* Transitions */
+  --trans-fast:   0.15s ease;
+  --trans-normal: 0.28s cubic-bezier(0.22,1,0.36,1);
+  --trans-slow:   0.5s cubic-bezier(0.22,1,0.36,1);
+
+  /* Spacing */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+}
+
+/* ── RESET & BASE ───────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  min-height: 100vh;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── ANIMATED MESH GRADIENT BACKGROUND ─────────────────────── */
+.bg-mesh {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+/* Duman katmanı 1 */
+.bg-mesh::before {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  background:
+    radial-gradient(ellipse 80% 60% at 15% 20%, rgba(30,18,80,0.55) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 70% at 85% 80%, rgba(15,30,70,0.5) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 50% at 50% 50%, rgba(8,14,35,0.7) 0%, transparent 70%);
+  animation: meshDrift1 22s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+/* Duman katmanı 2 */
+.bg-mesh::after {
+  content: '';
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  top: -20%;
+  left: -20%;
+  background:
+    radial-gradient(ellipse 70% 50% at 75% 25%, rgba(60,20,100,0.25) 0%, transparent 55%),
+    radial-gradient(ellipse 55% 65% at 25% 70%, rgba(10,50,90,0.25) 0%, transparent 55%);
+  animation: meshDrift2 30s ease-in-out infinite alternate;
+  will-change: transform;
+}
+
+@keyframes meshDrift1 {
+  0%   { transform: translate(0, 0)    rotate(0deg); }
+  33%  { transform: translate(20px, 15px) rotate(1deg); }
+  66%  { transform: translate(-15px, 25px) rotate(-1deg); }
+  100% { transform: translate(10px, -10px) rotate(0.5deg); }
+}
+
+@keyframes meshDrift2 {
+  0%   { transform: translate(0, 0)    rotate(0deg); }
+  50%  { transform: translate(-25px, 20px) rotate(-1.5deg); }
+  100% { transform: translate(15px, -15px) rotate(1deg); }
+}
+
+/* Floating orbs */
+.bg-orbs {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.bg-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  will-change: transform;
+}
+
+.bg-orb-1 {
+  width: 700px; height: 700px;
+  background: radial-gradient(circle, rgba(245,158,11,0.07), transparent 65%);
+  top: -250px; left: -250px;
+  animation: orbFloat1 18s ease-in-out infinite alternate;
+}
+
+.bg-orb-2 {
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(139,92,246,0.08), transparent 65%);
+  bottom: -200px; right: -200px;
+  animation: orbFloat2 24s ease-in-out infinite alternate;
+}
+
+.bg-orb-3 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(6,182,212,0.05), transparent 65%);
+  top: 40%; left: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbFloat3 15s ease-in-out infinite alternate;
+}
+
+@keyframes orbFloat1 {
+  0%   { transform: translate(0,   0)   scale(1);   }
+  100% { transform: translate(40px, 30px) scale(1.15); }
+}
+@keyframes orbFloat2 {
+  0%   { transform: translate(0,   0)    scale(1);   }
+  100% { transform: translate(-30px, -20px) scale(1.1);  }
+}
+@keyframes orbFloat3 {
+  0%   { transform: translate(-50%, -50%) scale(1);   }
+  100% { transform: translate(-50%, -50%) scale(1.2); }
+}
+
+/* ── LAYOUT ─────────────────────────────────────────────────── */
+.app-wrapper {
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-lg);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   STAGGERED ENTRY ANIMATIONS
+   Başlangıçta tüm öğeler gizli; JS tetiklemesiyle sınıf eklenince belirir.
+   ───────────────────────────────────────────────────────────── */
+
+/* Rozet */
+.header-badge {
+  opacity: 0;
+  transform: translateY(-12px);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.22,1,0.36,1);
+  will-change: transform, opacity;
+}
+.header-badge.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tarih + gün adı */
+.header-date,
+.header-day {
+  opacity: 0;
+  transform: translateY(-18px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22,1,0.36,1);
+  will-change: transform, opacity;
+}
+.header-date.is-visible,
+.header-day.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Saat */
+.header-clock {
+  opacity: 0;
+  transform: translateY(-12px) scale(0.95);
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.22,1,0.36,1);
+  will-change: transform, opacity;
+}
+.header-clock.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Divider */
+.header-divider {
+  opacity: 0;
+  transform: scaleX(0);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  will-change: transform, opacity;
+}
+.header-divider.is-visible {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+/* Kart — Sabah soldan, Akşam sağdan gelir */
+.menu-card {
+  opacity: 0;
+  will-change: transform, opacity;
+  transition:
+    opacity    0.6s cubic-bezier(0.22,1,0.36,1),
+    transform  0.6s cubic-bezier(0.22,1,0.36,1),
+    box-shadow var(--trans-normal);
+}
+
+.menu-card--morning {
+  transform: translateX(-40px) scale(0.97);
+}
+.menu-card--evening {
+  transform: translateX(40px) scale(0.97);
+}
+.menu-card.is-visible {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+}
+
+/* ── HEADER LAYOUT ───────────────────────────────────────────── */
+.app-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-2xl) var(--space-lg) var(--space-xl);
+  text-align: center;
+}
+
+/* ── ROZET ───────────────────────────────────────────────────── */
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: 6px 16px;
+  border-radius: 99px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  backdrop-filter: blur(8px);
+}
+
+.header-badge .dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--accent-success);
+  box-shadow: 0 0 8px var(--accent-success);
+  animation: dotPulse 2s ease infinite;
+  flex-shrink: 0;
+}
+
+@keyframes dotPulse {
+  0%, 100% { opacity: 1; transform: scale(1);   box-shadow: 0 0 8px  var(--accent-success); }
+  50%       { opacity: 0.5; transform: scale(0.7); box-shadow: 0 0 3px  var(--accent-success); }
+}
+
+/* ── TARİH & GÜN ADI ─────────────────────────────────────────── */
+.header-date {
+  font-size: clamp(2rem, 6vw, 3.2rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1.1;
+}
+
+.header-day {
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  color: var(--text-secondary);
+  font-weight: 400;
+}
+
+/* ── DİJİTAL SAAT ────────────────────────────────────────────── */
+.header-clock-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: clamp(2rem, 5vw, 2.8rem);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-clock {
+  font-size: clamp(1.4rem, 4vw, 2rem);
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.06em;
+  color: var(--accent-info);
+  text-shadow: 0 0 24px rgba(6,182,212,0.5), 0 0 48px rgba(6,182,212,0.2);
+  display: block;
+  /* Saat flip animasyonu için */
+  transition: transform 0.18s cubic-bezier(0.4,0,0.2,1), opacity 0.18s ease;
+  will-change: transform, opacity;
+}
+
+/* Saat değişirken yukarı doğru uçma durumu */
+.header-clock.clock-exit {
+  transform: translateY(-110%);
+  opacity: 0;
+}
+/* Yeni değer aşağıdan gelme durumu */
+.header-clock.clock-enter {
+  transform: translateY(110%);
+  opacity: 0;
+  transition: none;
+}
+.header-clock.clock-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: transform 0.18s cubic-bezier(0.22,1,0.36,1), opacity 0.18s ease;
+}
+
+.header-divider {
+  width: 80px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent);
+  border: none;
+  margin: var(--space-sm) 0;
+  transform-origin: center;
+}
+
+/* ── MENU GRID ───────────────────────────────────────────────── */
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+  flex: 1;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .menu-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
+  .app-wrapper { padding: var(--space-md); }
+  .menu-card--morning,
+  .menu-card--evening { transform: translateY(30px) scale(0.97); }
+}
+
+/* ── MENU CARD — Glassmorphism + Gradient Border ─────────────── */
+.menu-card {
+  position: relative;
+  background: var(--bg-card);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  border-radius: var(--radius-xl);
+  overflow: visible; /* border pseudo-element dışarı taşmasın diye wrapper kullanıyoruz */
+  box-shadow: var(--shadow-card);
+}
+
+/* Gradient border için pseudo wrapper */
+.menu-card::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: calc(var(--radius-xl) + 1px);
+  z-index: -1;
+  transition: opacity var(--trans-slow);
+  opacity: 0.6;
+}
+
+.menu-card--morning::before {
+  background: linear-gradient(
+    135deg,
+    rgba(245,158,11,0.5)   0%,
+    rgba(251,191,36,0.15)  30%,
+    rgba(255,255,255,0.04) 60%,
+    rgba(245,158,11,0.3)  100%
+  );
+  animation: borderGlowMorning 5s ease-in-out infinite alternate;
+}
+
+.menu-card--evening::before {
+  background: linear-gradient(
+    135deg,
+    rgba(139,92,246,0.5)   0%,
+    rgba(167,139,250,0.15) 30%,
+    rgba(255,255,255,0.04) 60%,
+    rgba(100,60,240,0.35)  100%
+  );
+  animation: borderGlowEvening 5s ease-in-out infinite alternate;
+}
+
+@keyframes borderGlowMorning {
+  0%   { opacity: 0.5; filter: hue-rotate(0deg);   }
+  50%  { opacity: 0.8; filter: hue-rotate(8deg);    }
+  100% { opacity: 0.5; filter: hue-rotate(-8deg);   }
+}
+
+@keyframes borderGlowEvening {
+  0%   { opacity: 0.5; filter: hue-rotate(0deg);   }
+  50%  { opacity: 0.8; filter: hue-rotate(-10deg);  }
+  100% { opacity: 0.5; filter: hue-rotate(10deg);   }
+}
+
+/* İçerik kapsayıcısı (eski overflow:hidden davranışını sağlar) */
+.card-inner {
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  height: 100%;
+}
+
+/* Hover kaldırma + glow güçlendirme */
+.menu-card:hover {
+  transform: translateY(-6px) scale(1.005) !important;
+  transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s ease !important;
+}
+
+.menu-card--morning:hover {
+  box-shadow: var(--shadow-card), 0 0 80px rgba(245,158,11,0.2), 0 0 30px rgba(245,158,11,0.1);
+}
+.menu-card--morning:hover::before { opacity: 1; }
+
+.menu-card--evening:hover {
+  box-shadow: var(--shadow-card), 0 0 80px rgba(139,92,246,0.2), 0 0 30px rgba(139,92,246,0.1);
+}
+.menu-card--evening:hover::before { opacity: 1; }
+
+/* ── CARD HEADER ─────────────────────────────────────────────── */
+.card-header {
+  padding: var(--space-xl) var(--space-xl) var(--space-lg);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+.menu-card--morning .card-header::before {
+  background: linear-gradient(135deg, var(--accent-morning-1), var(--accent-morning-2));
+}
+.menu-card--evening .card-header::before {
+  background: linear-gradient(135deg, var(--accent-evening-1), var(--accent-evening-2));
+}
+
+/* Parıltı ışık efekti (card-header üst) */
+.card-header::after {
+  content: '';
+  position: absolute;
+  top: -60%;
+  left: 20%;
+  width: 60%;
+  height: 120%;
+  background: rgba(255,255,255,0.025);
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+
+.card-header-top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-sm);
+}
+
+.card-icon {
+  width: 54px; height: 54px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  flex-shrink: 0;
+  transition: transform var(--trans-normal);
+}
+
+.menu-card:hover .card-icon {
+  transform: scale(1.1) rotate(-5deg);
+}
+
+.menu-card--morning .card-icon {
+  background: linear-gradient(135deg, rgba(245,158,11,0.18), rgba(251,191,36,0.08));
+  border: 1px solid rgba(245,158,11,0.22);
+  box-shadow: 0 0 24px rgba(245,158,11,0.12), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+.menu-card--evening .card-icon {
+  background: linear-gradient(135deg, rgba(139,92,246,0.18), rgba(167,139,250,0.08));
+  border: 1px solid rgba(139,92,246,0.22);
+  box-shadow: 0 0 24px rgba(139,92,246,0.12), inset 0 1px 0 rgba(255,255,255,0.08);
+}
+
+.card-title-group { flex: 1; }
+
+.card-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.menu-card--morning .card-label { color: var(--accent-morning-2); }
+.menu-card--evening .card-label { color: var(--accent-evening-2); }
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.card-calorie-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 99px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  backdrop-filter: blur(8px);
+}
+.menu-card--morning .card-calorie-badge {
+  background: rgba(245,158,11,0.1);
+  border: 1px solid rgba(245,158,11,0.18);
+  color: var(--accent-morning-2);
+}
+.menu-card--evening .card-calorie-badge {
+  background: rgba(139,92,246,0.1);
+  border: 1px solid rgba(139,92,246,0.18);
+  color: var(--accent-evening-2);
+}
+
+.card-header-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-subtle), transparent);
+  margin: var(--space-md) 0 0;
+  border: none;
+}
+
+/* ── CARD BODY ───────────────────────────────────────────────── */
+.card-body {
+  padding: var(--space-lg) var(--space-xl) var(--space-xl);
+}
+
+/* ── FOOD ITEMS GRID ─────────────────────────────────────────── */
+.food-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+@media (max-width: 480px) {
+  .food-grid { grid-template-columns: 1fr; }
+}
+
+/* Stagger animasyonu için başlangıç durumu */
+.food-item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-sm);
+  padding: 12px 14px;
+  background: var(--bg-item);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  cursor: default;
+  position: relative;
+  overflow: hidden;
+
+  /* Giriş animasyonu için başlangıç */
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    background   var(--trans-fast),
+    border-color var(--trans-fast),
+    transform    0.25s cubic-bezier(0.22,1,0.36,1),
+    box-shadow   0.25s ease,
+    opacity      0.3s ease;
+  will-change: transform, opacity, box-shadow;
+}
+
+/* İçerik parıltı overlay */
+.food-item::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0);
+  border-radius: var(--radius-md);
+  transition: background var(--trans-fast);
+  pointer-events: none;
+}
+
+/* Yemek görünür oldu */
+.food-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Morning kart hover */
+.menu-card--morning .food-item:hover {
+  background: rgba(30, 35, 58, 0.95);
+  border-color: rgba(245,158,11,0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3), 0 0 16px rgba(245,158,11,0.08);
+}
+.menu-card--morning .food-item:hover::before {
+  background: rgba(245,158,11,0.03);
+}
+
+/* Evening kart hover */
+.menu-card--evening .food-item:hover {
+  background: rgba(30, 35, 58, 0.95);
+  border-color: rgba(139,92,246,0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3), 0 0 16px rgba(139,92,246,0.08);
+}
+.menu-card--evening .food-item:hover::before {
+  background: rgba(139,92,246,0.03);
+}
+
+/* ── FOOD ITEM — İÇERİĞİ ─────────────────────────────────────── */
+.food-item-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  width: 28px;
+  text-align: center;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+  transition: transform var(--trans-normal), filter var(--trans-normal);
+  margin-top: 1px;
+}
+.food-item:hover .food-item-icon {
+  transform: scale(1.2) rotate(-5deg);
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.4));
+}
+
+.food-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.food-item-name {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.35;
+  display: block;
+  transition: color var(--trans-fast);
+}
+.food-item:hover .food-item-name {
+  color: #fff;
+}
+
+.food-item-alt {
+  display: block;
+  font-size: 0.73rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-top: 3px;
+  line-height: 1.35;
+  transition: color var(--trans-normal);
+}
+
+/* Hover'da alternatifler parlar */
+.menu-card--morning .food-item:hover .food-item-alt {
+  color: var(--accent-morning-3);
+}
+.menu-card--evening .food-item:hover .food-item-alt {
+  color: var(--accent-evening-3);
+}
+
+.food-item-index {
+  font-size: 0.68rem;
+  color: var(--text-muted);
+  font-weight: 700;
+  min-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.05);
+  flex-shrink: 0;
+  margin-top: 1px;
+  transition: background var(--trans-fast), color var(--trans-fast), transform var(--trans-normal);
+}
+
+.menu-card--morning .food-item:hover .food-item-index {
+  background: rgba(245,158,11,0.18);
+  color: var(--accent-morning-2);
+  transform: scale(1.15);
+}
+.menu-card--evening .food-item:hover .food-item-index {
+  background: rgba(139,92,246,0.18);
+  color: var(--accent-evening-2);
+  transform: scale(1.15);
+}
+
+/* ── EMPTY STATE ─────────────────────────────────────────────── */
+.empty-card {
+  background: var(--bg-card);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px dashed rgba(255,255,255,0.08);
+  border-radius: var(--radius-xl);
+  padding: var(--space-2xl);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-md);
+  animation: fadeScaleUp 0.5s cubic-bezier(0.22,1,0.36,1) both;
+}
+
+.empty-card-icon {
+  font-size: 3rem;
+  filter: grayscale(0.2);
+  animation: emptyBounce 3s ease-in-out infinite;
+}
+
+@keyframes emptyBounce {
+  0%, 100% { transform: translateY(0)   scale(1); }
+  50%       { transform: translateY(-10px) scale(1.05); }
+}
+
+.empty-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+.empty-card-desc {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  max-width: 300px;
+  line-height: 1.6;
+}
+
+/* ── LOADING ─────────────────────────────────────────────────── */
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-lg);
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+.loading-overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-spinner {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.06);
+  border-top-color: var(--accent-morning-1);
+  border-right-color: var(--accent-evening-1);
+  animation: spin 0.85s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.loading-text {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  animation: loadingPulse 1.5s ease-in-out infinite;
+}
+@keyframes loadingPulse {
+  0%, 100% { opacity: 0.6; }
+  50%       { opacity: 1;   }
+}
+
+/* ── ERROR BANNER ────────────────────────────────────────────── */
+.error-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: rgba(244,63,94,0.07);
+  border: 1px solid rgba(244,63,94,0.18);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-lg);
+  backdrop-filter: blur(8px);
+  animation: fadeScaleUp 0.3s ease both;
+}
+.error-banner-icon { font-size: 1.2rem; }
+.error-banner-text { font-size: 0.85rem; color: #fda4af; line-height: 1.5; }
+
+/* ── FOOTER ──────────────────────────────────────────────────── */
+.app-footer {
+  text-align: center;
+  padding: var(--space-xl) 0 var(--space-lg);
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  opacity: 0;
+  transition: opacity 0.6s ease 1.5s;
+}
+.app-footer.is-visible { opacity: 1; }
+.app-footer span { color: var(--text-label); }
+
+/* ── GENEL ANİMASYONLAR ──────────────────────────────────────── */
+@keyframes fadeScaleUp {
+  from { opacity: 0; transform: translateY(16px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* ── SCROLLBAR ───────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg-base); }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.18); }
+
+/* ── SELECTION ───────────────────────────────────────────────── */
+::selection {
+  background: rgba(139,92,246,0.3);
+  color: var(--text-primary);
+}

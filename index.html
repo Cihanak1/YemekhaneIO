@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Günlük Yemek Menüsü | Sabah Kahvaltısı & Akşam Yemeği</title>
+  <meta name="description" content="Her gün otomatik olarak güncellenen dijital yemek menüsü panosu. Sabah kahvaltısı ve akşam yemeği menülerinizi tek ekranda görün." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#080b14" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Günlük Yemek Menüsü" />
+  <meta property="og:description" content="Sabah kahvaltısı ve akşam yemeği menülerinizi tek ekranda görün." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- SheetJS CDN -->
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <style>
+    /* FOUC önleme */
+    body { background: #080b14; }
+  </style>
+</head>
+<body>
+
+  <!-- ── ANİMASYONLU MESH ARKA PLAN ─────────────────────────── -->
+  <div class="bg-mesh" aria-hidden="true"></div>
+
+  <!-- ── FLOATING ORBS ──────────────────────────────────────── -->
+  <div class="bg-orbs" aria-hidden="true">
+    <div class="bg-orb bg-orb-1"></div>
+    <div class="bg-orb bg-orb-2"></div>
+    <div class="bg-orb bg-orb-3"></div>
+  </div>
+
+  <!-- ── YÜKLEME EKRANI ─────────────────────────────────────── -->
+  <div id="loading-overlay" class="loading-overlay" role="status" aria-live="polite">
+    <div class="loading-spinner" aria-hidden="true"></div>
+    <p class="loading-text">Menü yükleniyor…</p>
+  </div>
+
+  <!-- ── ANA SARMALAYICI ────────────────────────────────────── -->
+  <div class="app-wrapper">
+
+    <!-- ── HEADER ─────────────────────────────────────────── -->
+    <header class="app-header" role="banner">
+
+      <!-- Rozet (stagger: 0ms) -->
+      <div id="header-badge" class="header-badge">
+        <span class="dot" aria-hidden="true"></span>
+        Günlük Menü Panosu
+      </div>
+
+      <!-- Tarih (stagger: 200ms) -->
+      <h1 id="header-date" class="header-date">&nbsp;</h1>
+
+      <!-- Gün adı (stagger: 300ms) -->
+      <p id="header-day" class="header-day">&nbsp;</p>
+
+      <!-- Saat (stagger: 400ms) — flip animasyonu için sarmalayıcı -->
+      <div class="header-clock-wrapper">
+        <time
+          id="header-clock"
+          class="header-clock"
+          aria-label="Şu anki saat"
+          aria-live="off"
+        >&nbsp;</time>
+      </div>
+
+      <!-- Divider (stagger: 500ms) -->
+      <hr id="header-divider" class="header-divider" aria-hidden="true" />
+
+    </header>
+
+    <!-- ── HATA ALANI ──────────────────────────────────────── -->
+    <div id="error-container" role="alert" aria-live="assertive"></div>
+
+    <!-- ── MENÜ IZGARASI ───────────────────────────────────── -->
+    <main id="menu-grid" class="menu-grid" role="main">
+
+      <!-- ░░░ SABAH KARTI ░░░ -->
+      <article
+        id="card-morning"
+        class="menu-card menu-card--morning"
+        aria-label="Sabah Kahvaltısı Menüsü"
+      >
+        <div class="card-inner">
+          <header class="card-header">
+            <div class="card-header-top">
+              <div class="card-icon" aria-hidden="true">☀️</div>
+              <div class="card-title-group">
+                <div class="card-label">Sabah</div>
+                <h2 class="card-title">Kahvaltı Menüsü</h2>
+              </div>
+              <div id="morning-calorie" aria-label="Kalori bilgisi"></div>
+            </div>
+            <hr class="card-header-divider" aria-hidden="true" />
+          </header>
+          <div id="card-morning-body" class="card-body"></div>
+        </div>
+      </article>
+
+      <!-- ░░░ SABAH "MENÜ YOK" KARTI ░░░ -->
+      <div
+        id="no-menu-morning"
+        class="empty-card"
+        role="status"
+        aria-label="Sabah kahvaltısı menüsü bulunamadı"
+        style="display:none"
+      >
+        <div class="empty-card-icon" aria-hidden="true">☀️</div>
+        <p class="empty-card-title">Sabah kahvaltısı menüsü</p>
+        <p class="empty-card-desc">Bugün için sabah kahvaltısı menüsü girilmemiştir.</p>
+      </div>
+
+      <!-- ░░░ AKŞAM KARTI ░░░ -->
+      <article
+        id="card-evening"
+        class="menu-card menu-card--evening"
+        aria-label="Akşam Yemeği Menüsü"
+      >
+        <div class="card-inner">
+          <header class="card-header">
+            <div class="card-header-top">
+              <div class="card-icon" aria-hidden="true">🌙</div>
+              <div class="card-title-group">
+                <div class="card-label">Akşam</div>
+                <h2 class="card-title">Yemek Menüsü</h2>
+              </div>
+              <div id="evening-calorie" aria-label="Kalori bilgisi"></div>
+            </div>
+            <hr class="card-header-divider" aria-hidden="true" />
+          </header>
+          <div id="card-evening-body" class="card-body"></div>
+        </div>
+      </article>
+
+      <!-- ░░░ AKŞAM "MENÜ YOK" KARTI ░░░ -->
+      <div
+        id="no-menu-evening"
+        class="empty-card"
+        role="status"
+        aria-label="Akşam yemeği menüsü bulunamadı"
+        style="display:none"
+      >
+        <div class="empty-card-icon" aria-hidden="true">🌙</div>
+        <p class="empty-card-title">Akşam yemeği menüsü</p>
+        <p class="empty-card-desc">Bugün için akşam yemeği menüsü girilmemiştir.</p>
+      </div>
+
+    </main>
+
+    <!-- ── FOOTER ──────────────────────────────────────────── -->
+    <footer id="app-footer" class="app-footer" role="contentinfo">
+      Son güncelleme: <span id="footer-time"></span>
+    </footer>
+
+  </div><!-- /.app-wrapper -->
+
+  <!-- ── SCRIPTS ─────────────────────────────────────────────── -->
+  <script src="js/excelReader.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
