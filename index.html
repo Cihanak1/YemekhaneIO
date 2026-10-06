@@ -2,173 +2,222 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 
   <!-- SEO -->
-  <title>Günlük Yemek Menüsü | Sabah Kahvaltısı & Akşam Yemeği</title>
+  <title>Günlük Yemek Menüsü | Sabah Kahvaltısı &amp; Akşam Yemeği</title>
   <meta name="description" content="Her gün otomatik olarak güncellenen dijital yemek menüsü panosu. Sabah kahvaltısı ve akşam yemeği menülerinizi tek ekranda görün." />
   <meta name="robots" content="noindex, nofollow" />
   <meta name="theme-color" content="#080b14" />
+  <meta name="color-scheme" content="dark" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <!-- PWA & Mobil Ana Ekrana Ekleme -->
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Yemekhane" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Günlük Yemek Menüsü" />
   <meta property="og:description" content="Sabah kahvaltısı ve akşam yemeği menülerinizi tek ekranda görün." />
   <meta property="og:type" content="website" />
 
-  <!-- Google Fonts -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>" />
+
+  <!-- Google Fonts — render'ı bloklamadan yüklenir; o sırada metrik uyumlu yedek font kullanılır -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-  <!-- SheetJS CDN -->
-  <script src="https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&amp;display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&amp;display=swap" /></noscript>
 
   <!-- App CSS -->
   <link rel="stylesheet" href="css/style.css" />
 
-  <style>
-    /* FOUC önleme */
-    body { background: #080b14; }
-  </style>
+  <!-- Veri + uygulama (defer: HTML ayrıştırmasını bloklamaz, sırayla çalışır) -->
+  <script src="data/sabah_kahvaltisi.js" defer></script>
+  <script src="data/aksam_yemegi.js" defer></script>
+  <script src="js/excelReader.js" defer></script>
+  <script src="js/app.js" defer></script>
 </head>
 <body>
 
-  <!-- ── ANİMASYONLU MESH ARKA PLAN ─────────────────────────── -->
-  <div class="bg-mesh" aria-hidden="true"></div>
+  <!-- ── STATİK ARKA PLAN ─────────────────────────────────────── -->
+  <div class="bg" aria-hidden="true"></div>
 
-  <!-- ── FLOATING ORBS ──────────────────────────────────────── -->
-  <div class="bg-orbs" aria-hidden="true">
-    <div class="bg-orb bg-orb-1"></div>
-    <div class="bg-orb bg-orb-2"></div>
-    <div class="bg-orb bg-orb-3"></div>
-  </div>
+  <a class="skip-link" href="#menu-grid">Menüye geç</a>
 
-  <!-- ── YÜKLEME EKRANI ─────────────────────────────────────── -->
-  <div id="loading-overlay" class="loading-overlay" role="status" aria-live="polite">
-    <div class="loading-spinner" aria-hidden="true"></div>
-    <p class="loading-text">Menü yükleniyor…</p>
-  </div>
-
-  <!-- ── ANA SARMALAYICI ────────────────────────────────────── -->
-  <div class="app-wrapper">
+  <div class="app">
 
     <!-- ── HEADER ─────────────────────────────────────────── -->
-    <header class="app-header" role="banner">
+    <header class="app-header">
 
-      <!-- Rozet (stagger: 0ms) -->
-      <div id="header-badge" class="header-badge">
-        <span class="dot" aria-hidden="true"></span>
-        Günlük Menü Panosu
+      <div class="header-top">
+        <div class="brand">
+          <span class="dot" aria-hidden="true"></span>
+          <span class="brand-text">Yemekhane Panosu</span>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" id="btn-search" class="icon-btn" title="Menüde Yemek Ara" aria-label="Menüde yemek ara">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/>
+              <path d="M20 20l-4-4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <button type="button" id="btn-calendar" class="icon-btn" title="Takvimden Gün Seç" aria-label="Takvimden gün seç">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <rect x="3" y="4" width="18" height="17" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+              <line x1="16" y1="2" x2="16" y2="5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              <line x1="8" y1="2" x2="8" y2="5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+              <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </button>
+
+          <button type="button" id="btn-share" class="icon-btn" title="Günün Menüsünü Paylaş veya Kopyala" aria-label="Günün menüsünü paylaş veya kopyala">
+            <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7M16 6l-4-4-4 4M12 2v13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+          <time id="header-clock" class="clock" aria-label="Şu anki saat">--:--:--</time>
+        </div>
+
+        <!-- Gizli yerel tarih seçici girdisi -->
+        <input type="date" id="date-picker-input" class="visually-hidden" aria-hidden="true" tabindex="-1" />
       </div>
 
-      <!-- Tarih (stagger: 200ms) -->
-      <h1 id="header-date" class="header-date">&nbsp;</h1>
+      <div class="date-nav">
+        <button type="button" id="prev-day" class="icon-btn nav-btn" aria-label="Önceki gün">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
 
-      <!-- Gün adı (stagger: 300ms) -->
-      <p id="header-day" class="header-day">&nbsp;</p>
+        <div class="date-display" aria-live="polite">
+          <h1 id="header-date" class="header-date">&nbsp;</h1>
+          <p class="header-day">
+            <span id="header-day">&nbsp;</span>
+            <span id="today-pill" class="today-pill" hidden>Bugün</span>
+            <button type="button" id="today-btn" class="today-btn" hidden>Bugüne dön</button>
+          </p>
+        </div>
 
-      <!-- Saat (stagger: 400ms) — flip animasyonu için sarmalayıcı -->
-      <div class="header-clock-wrapper">
-        <time
-          id="header-clock"
-          class="header-clock"
-          aria-label="Şu anki saat"
-          aria-live="off"
-        >&nbsp;</time>
+        <button type="button" id="next-day" class="icon-btn nav-btn" aria-label="Sonraki gün">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M9 18l6-6-6-6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
       </div>
 
-      <!-- Divider (stagger: 500ms) -->
-      <hr id="header-divider" class="header-divider" aria-hidden="true" />
+      <!-- Gün seçimi şeridi -->
+      <nav id="day-strip" class="day-strip" aria-label="Gün seçimi" hidden>
+        <ol id="day-strip-list" class="day-strip-list"></ol>
+      </nav>
+
+      <!-- Öğün filtreleme anahtarı (Mobilde tek tıkla kahvaltı veya akşam görünümü) -->
+      <div id="meal-switch" class="meal-switch" role="tablist" aria-label="Öğün filtreleme">
+        <button type="button" class="meal-switch-btn is-active" data-meal="all" role="tab" aria-selected="true">
+          <span aria-hidden="true">🍽️</span> Tümü
+        </button>
+        <button type="button" class="meal-switch-btn" data-meal="morning" role="tab" aria-selected="false">
+          <span aria-hidden="true">☀️</span> Sabah
+        </button>
+        <button type="button" class="meal-switch-btn" data-meal="evening" role="tab" aria-selected="false">
+          <span aria-hidden="true">🌙</span> Akşam
+        </button>
+      </div>
 
     </header>
 
     <!-- ── HATA ALANI ──────────────────────────────────────── -->
-    <div id="error-container" role="alert" aria-live="assertive"></div>
+    <div id="error-container" role="alert"></div>
 
     <!-- ── MENÜ IZGARASI ───────────────────────────────────── -->
-    <main id="menu-grid" class="menu-grid" role="main">
+    <main id="menu-grid" class="menu-grid" tabindex="-1">
 
       <!-- ░░░ SABAH KARTI ░░░ -->
-      <article
-        id="card-morning"
-        class="menu-card menu-card--morning"
-        aria-label="Sabah Kahvaltısı Menüsü"
-      >
-        <div class="card-inner">
-          <header class="card-header">
-            <div class="card-header-top">
-              <div class="card-icon" aria-hidden="true">☀️</div>
-              <div class="card-title-group">
-                <div class="card-label">Sabah</div>
-                <h2 class="card-title">Kahvaltı Menüsü</h2>
-              </div>
-              <div id="morning-calorie" aria-label="Kalori bilgisi"></div>
-            </div>
-            <hr class="card-header-divider" aria-hidden="true" />
-          </header>
-          <div id="card-morning-body" class="card-body"></div>
+      <article id="card-morning" class="menu-card menu-card--morning" aria-labelledby="title-morning">
+        <header class="card-header">
+          <div class="card-icon" aria-hidden="true">☀️</div>
+          <div class="card-title-group">
+            <p class="card-label">Sabah</p>
+            <h2 id="title-morning" class="card-title">Kahvaltı Menüsü</h2>
+          </div>
+          <span id="morning-meta" class="card-meta"></span>
+        </header>
+        <div id="card-morning-body" class="card-body" aria-busy="true">
+          <div class="skeleton-list" aria-hidden="true">
+            <span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span>
+          </div>
         </div>
+        <div id="morning-extras" class="card-extras" hidden></div>
       </article>
-
-      <!-- ░░░ SABAH "MENÜ YOK" KARTI ░░░ -->
-      <div
-        id="no-menu-morning"
-        class="empty-card"
-        role="status"
-        aria-label="Sabah kahvaltısı menüsü bulunamadı"
-        style="display:none"
-      >
-        <div class="empty-card-icon" aria-hidden="true">☀️</div>
-        <p class="empty-card-title">Sabah kahvaltısı menüsü</p>
-        <p class="empty-card-desc">Bugün için sabah kahvaltısı menüsü girilmemiştir.</p>
-      </div>
 
       <!-- ░░░ AKŞAM KARTI ░░░ -->
-      <article
-        id="card-evening"
-        class="menu-card menu-card--evening"
-        aria-label="Akşam Yemeği Menüsü"
-      >
-        <div class="card-inner">
-          <header class="card-header">
-            <div class="card-header-top">
-              <div class="card-icon" aria-hidden="true">🌙</div>
-              <div class="card-title-group">
-                <div class="card-label">Akşam</div>
-                <h2 class="card-title">Yemek Menüsü</h2>
-              </div>
-              <div id="evening-calorie" aria-label="Kalori bilgisi"></div>
-            </div>
-            <hr class="card-header-divider" aria-hidden="true" />
-          </header>
-          <div id="card-evening-body" class="card-body"></div>
+      <article id="card-evening" class="menu-card menu-card--evening" aria-labelledby="title-evening">
+        <header class="card-header">
+          <div class="card-icon" aria-hidden="true">🌙</div>
+          <div class="card-title-group">
+            <p class="card-label">Akşam</p>
+            <h2 id="title-evening" class="card-title">Yemek Menüsü</h2>
+          </div>
+          <span id="evening-meta" class="card-meta"></span>
+        </header>
+        <div id="card-evening-body" class="card-body" aria-busy="true">
+          <div class="skeleton-list" aria-hidden="true">
+            <span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span><span class="skeleton"></span>
+          </div>
         </div>
+        <div id="evening-extras" class="card-extras" hidden></div>
       </article>
-
-      <!-- ░░░ AKŞAM "MENÜ YOK" KARTI ░░░ -->
-      <div
-        id="no-menu-evening"
-        class="empty-card"
-        role="status"
-        aria-label="Akşam yemeği menüsü bulunamadı"
-        style="display:none"
-      >
-        <div class="empty-card-icon" aria-hidden="true">🌙</div>
-        <p class="empty-card-title">Akşam yemeği menüsü</p>
-        <p class="empty-card-desc">Bugün için akşam yemeği menüsü girilmemiştir.</p>
-      </div>
 
     </main>
 
+    <!-- ── MENÜ NOTLARI ────────────────────────────────────── -->
+    <details id="notes" class="notes" hidden>
+      <summary>Menü Notları &amp; Bilgilendirme</summary>
+      <div id="notes-body" class="notes-body"></div>
+    </details>
+
     <!-- ── FOOTER ──────────────────────────────────────────── -->
-    <footer id="app-footer" class="app-footer" role="contentinfo">
-      Son güncelleme: <span id="footer-time"></span>
+    <footer class="app-footer">
+      <span>Son güncelleme: <span id="footer-time"></span></span>
+      <span class="hint hint--touch">Gün değiştirmek için kartları sağa/sola kaydırın</span>
+      <span class="hint hint--kbd">Gün değiştirmek için ← → tuşlarını kullanın</span>
     </footer>
 
-  </div><!-- /.app-wrapper -->
+  </div><!-- /.app -->
 
-  <!-- ── SCRIPTS ─────────────────────────────────────────────── -->
-  <script src="js/excelReader.js"></script>
-  <script src="js/app.js"></script>
+  <!-- ── ARAMA MODALI (DIALOG) ─────────────────────────────────── -->
+  <dialog id="search-modal" class="search-modal" aria-labelledby="search-modal-title">
+    <div class="search-modal-card">
+      <div class="search-head">
+        <div class="search-input-wrap">
+          <svg class="search-icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/>
+            <path d="M20 20l-4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <input type="search" id="search-input" class="search-input" placeholder="Yemek veya malzeme ara... (örn: Köfte, Mantı, Omlet)" autocomplete="off" />
+        </div>
+        <button type="button" id="search-close" class="icon-btn search-close-btn" aria-label="Aramayı kapat">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="search-body">
+        <div id="search-status" class="search-status">Tüm ayın menüsünde arama yapın.</div>
+        <ul id="search-results" class="search-results" role="listbox"></ul>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ── TOAST BİLDİRİMİ ──────────────────────────────────────── -->
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <noscript>
+    <p class="noscript">Menüyü görüntülemek için JavaScript'i etkinleştirin.</p>
+  </noscript>
 
 </body>
 </html>

@@ -1,0 +1,8 @@
+# Subfolder duplicate
+yemekhaneIO/
+
+# Temp files
+*.tmp
+*.log
+scratch/
+test_*.html

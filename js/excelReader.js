@@ -1,6 +1,10 @@
 /**
- * excelReader.js  — v2.0
+ * excelReader.js  — v3.0
  * ──────────────────────────────────────────────────────────────
+ * v3.0: JSON veri desteği (data/*.json + gömülü data/*.js),
+ *       createMenuSource() ile tüm ayı tek seferde okuma,
+ *       SheetJS yalnızca .xlsx gerektiğinde tembel yüklenir.
+ *
  * Gerçek Excel yapısına göre yeniden yazıldı.
  *
  * SABAH (sabah_kahvaltisi.xlsx — sheet: KAHVALTI)
@@ -292,6 +296,32 @@ const ExcelReader = (() => {
     return { foods, calories: null };
   }
 
+  /* ═══════════════════════════════════════════════════════════
+     SheetJS — TEMBEL YÜKLEME
+     Kütüphane (~900 KB) yalnızca bir .xlsx dosyası okunacağı zaman
+     indirilir. JSON verisiyle çalışırken hiç yüklenmez.
+     ═══════════════════════════════════════════════════════════ */
+  const SHEETJS_URL = 'https://cdn.sheetjs.com/xlsx-0.20.1/package/dist/xlsx.full.min.js';
+  let sheetJsPromise = null;
+
+  function ensureSheetJS() {
+    if (window.XLSX) return Promise.resolve();
+    if (!sheetJsPromise) {
+      sheetJsPromise = new Promise((resolve, reject) => {
+        const s = document.createElement('script');
+        s.src = SHEETJS_URL;
+        s.async = true;
+        s.onload = () => resolve();
+        s.onerror = () => {
+          sheetJsPromise = null;
+          reject(new Error('SheetJS kütüphanesi yüklenemedi'));
+        };
+        document.head.appendChild(s);
+      });
+    }
+    return sheetJsPromise;
+  }
+
   /**
    * Dosyayı fetch + SheetJS ile yükler ve grid döndürür.
    * @param {string} filePath
@@ -299,7 +329,8 @@ const ExcelReader = (() => {
    * @returns {Promise<Array[]>}
    */
   async function loadGrid(filePath, sheetName) {
-    const response = await fetch(filePath + '?_=' + Date.now());
+    await ensureSheetJS();
+    const response = await fetch(filePath, { cache: 'no-cache' });
     if (!response.ok) throw new Error(`HTTP ${response.status}: ${filePath}`);
     const buf = await response.arrayBuffer();
     const wb  = XLSX.read(buf, { type: 'array', cellDates: true, raw: true });
@@ -314,23 +345,165 @@ const ExcelReader = (() => {
     return grid;
   }
 
-  /**
-   * Sabah kahvaltı dosyasını yükler ve bugüne ait menüyü döndürür.
-   */
-  async function getMorningMenu(filePath, targetDateStr) {
-    const grid = await loadGrid(filePath, 'KAHVALTI');
-    return parseSabah(grid, targetDateStr);
+  /** Excel grid'indeki tüm tarihleri toplar (gün şeridi için). */
+  function collectDates(grid, cols) {
+    const set = new Set();
+    for (const row of grid) {
+      if (!row) continue;
+      for (const c of cols) {
+        const ds = extractDateStr(row[c]);
+        if (ds) set.add(ds);
+      }
+    }
+    return [...set];
+  }
+
+  /* ═══════════════════════════════════════════════════════════
+     JSON / GÖMÜLÜ VERİ
+     ═══════════════════════════════════════════════════════════ */
+
+  /** "6.10.2026" → "06.10.2026" */
+  function normalizeDateKey(str) {
+    const s = String(str || '').trim();
+    const p = s.split('.');
+    if (p.length !== 3) return s;
+    return `${p[0].padStart(2, '0')}.${p[1].padStart(2, '0')}.${p[2]}`;
+  }
+
+  /* Her öğünde sabit verilen ekmek / su / çay */
+  const EXTRA_PATTERNS = [/^\**\s*çeyrek ekmek/i, /^\**\s*500 ml/i, /^\**\s*çay/i];
+  function isExtra(text) {
+    const t = String(text || '').trim();
+    return EXTRA_PATTERNS.some(re => re.test(t));
+  }
+
+  /** Karşılaştırma anahtarı: küçük harf, boşluksuz, tekil "/" */
+  function compactName(s) {
+    return String(s || '')
+      .toLocaleLowerCase('tr')
+      .replace(/\*/g, '')
+      .replace(/\s+/g, '')
+      .replace(/\/+/g, '/');
   }
 
   /**
-   * Akşam yemeği dosyasını yükler ve bugüne ait menüyü döndürür.
+   * Ham gün kaydını görünüm modeline çevirir.
+   * yemekler[] (temiz isimler) ile ogeler[] (gramaj/kategori) eşleştirilir;
+   * eşleşmeyen sabit öğeler "extras" olarak ayrılır.
    */
+  function normalizeDay(day) {
+    if (!day) return null;
+    const names  = day.yemekler || day.foods || [];
+    const ogeler = Array.isArray(day.ogeler) ? day.ogeler : [];
+    const used   = new Set();
+
+    const items = names.map((name, i) => {
+      const key = compactName(name);
+      let idx = ogeler.findIndex((o, j) => !used.has(j) && compactName(o.ad) === key);
+      if (idx === -1 && ogeler[i] && !used.has(i) && !isExtra(ogeler[i].ad)) idx = i;
+      if (idx !== -1) used.add(idx);
+      const o = idx !== -1 ? ogeler[idx] : {};
+      return {
+        name:     String(name).trim(),
+        gramaj:   o.gramaj   || '',
+        enerji:   o.enerji   || '',
+        kategori: o.kategori || '',
+      };
+    });
+
+    const extras = ogeler
+      .filter((o, j) => !used.has(j) && isExtra(o.ad))
+      .map(o => String(o.ad).replace(/^\*+\s*/, '').trim());
+
+    return {
+      foods:    items.map(it => it.name),
+      items,
+      extras,
+      calories: day.calories || day.kalori || null,
+    };
+  }
+
+  const jsonCache = new Map();
+
+  /**
+   * JSON verisini yükler. data/*.js ile gömülü global varsa ağ isteği
+   * yapılmaz (file:// ile açıldığında da çalışır, çift indirme olmaz).
+   */
+  function loadJsonData(filePath, globalName) {
+    if (globalName && window[globalName]) return Promise.resolve(window[globalName]);
+    if (!jsonCache.has(filePath)) {
+      const p = fetch(filePath, { cache: 'no-cache' })
+        .then(r => {
+          if (!r.ok) throw new Error(`HTTP ${r.status}: ${filePath}`);
+          return r.json();
+        })
+        .catch(err => {
+          jsonCache.delete(filePath);
+          if (err instanceof TypeError) {
+            throw new Error(`${filePath} okunamadı (data/*.js dosyası eksik veya tarayıcı yerel dosya erişimini engelledi)`);
+          }
+          throw err;
+        });
+      jsonCache.set(filePath, p);
+    }
+    return jsonCache.get(filePath);
+  }
+
+  /**
+   * Bir öğün için veri kaynağı oluşturur.
+   * @param {string} filePath  .json veya .xlsx
+   * @param {'morning'|'evening'} kind
+   * @returns {Promise<{kind, title, notes, signature, dates: string[], getDay: (d:string)=>object|null}>}
+   */
+  async function createMenuSource(filePath, kind) {
+    const isMorning = kind === 'morning';
+
+    if (/\.json$/i.test(filePath)) {
+      const data = await loadJsonData(filePath, isMorning ? 'MENU_DATA_SABAH' : 'MENU_DATA_AKSAM');
+      const index = {};
+      if (data.gunler) {
+        for (const [k, v] of Object.entries(data.gunler)) index[normalizeDateKey(k)] = v;
+      } else if (Array.isArray(data.liste)) {
+        for (const v of data.liste) index[normalizeDateKey(v.tarih)] = v;
+      }
+      return {
+        kind,
+        title:     data.baslik || '',
+        notes:     Array.isArray(data.notlar) ? data.notlar : [],
+        signature: data.imza || null,
+        dates:     Object.keys(index),
+        getDay:    (dateStr) => normalizeDay(index[normalizeDateKey(dateStr)]),
+      };
+    }
+
+    // Excel (eski format) — grid bir kez okunur, günler bellekten çözülür
+    const grid  = await loadGrid(filePath, isMorning ? 'KAHVALTI' : 'YEMEK');
+    const parse = isMorning ? parseSabah : parseAksam;
+    const cols  = isMorning ? [0, 3, 6, 9, 12, 15, 18] : [1, 4, 7, 10, 13, 16, 19];
+    return {
+      kind,
+      title:     '',
+      notes:     [],
+      signature: null,
+      dates:     collectDates(grid, cols),
+      getDay:    (dateStr) => {
+        const r = parse(grid, normalizeDateKey(dateStr));
+        return r ? normalizeDay({ yemekler: r.foods }) : null;
+      },
+    };
+  }
+
+  /** Geriye dönük uyumluluk: tek günlük sabah menüsü */
+  async function getMorningMenu(filePath, targetDateStr) {
+    return (await createMenuSource(filePath, 'morning')).getDay(targetDateStr);
+  }
+
+  /** Geriye dönük uyumluluk: tek günlük akşam menüsü */
   async function getEveningMenu(filePath, targetDateStr) {
-    const grid = await loadGrid(filePath, 'YEMEK');
-    return parseAksam(grid, targetDateStr);
+    return (await createMenuSource(filePath, 'evening')).getDay(targetDateStr);
   }
 
   // Public API
-  return { getMorningMenu, getEveningMenu };
+  return { createMenuSource, getMorningMenu, getEveningMenu, normalizeDay };
 
 })();
