@@ -1,9 +1,10 @@
-const CACHE_NAME = 'yemekhane-v4.1';
+const CACHE_NAME = 'yemekhane-v4.3';
 const PRECACHE_URLS = [
   './',
   './index.html',
   './css/style.css',
   './js/app.js',
+  './js/quoteManager.js',
   './js/excelReader.js',
   './data/sabah_kahvaltisi.js',
   './data/aksam_yemegi.js',

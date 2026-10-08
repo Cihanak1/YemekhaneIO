@@ -39,6 +39,7 @@
   <script src="data/sabah_kahvaltisi.js" defer></script>
   <script src="data/aksam_yemegi.js" defer></script>
   <script src="js/excelReader.js" defer></script>
+  <script src="js/quoteManager.js" defer></script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -172,6 +173,13 @@
 
     </main>
 
+    <!-- ── GÜNÜN SÖZÜ BÖLÜMÜ ───────────────────────────────── -->
+    <section id="daily-quote-section" class="daily-quote-section" aria-label="Günün Sözü">
+      <div id="daily-quote-card" class="quote-card">
+        <!-- quoteManager.js tarafından doldurulur -->
+      </div>
+    </section>
+
     <!-- ── MENÜ NOTLARI ────────────────────────────────────── -->
     <details id="notes" class="notes" hidden>
       <summary>Menü Notları &amp; Bilgilendirme</summary>
@@ -209,6 +217,41 @@
         <div id="search-status" class="search-status">Tüm ayın menüsünde arama yapın.</div>
         <ul id="search-results" class="search-results" role="listbox"></ul>
       </div>
+    </div>
+  </dialog>
+
+  <!-- ── GÜNÜN SÖZÜ MODALI (DIALOG) ────────────────────────────── -->
+  <dialog id="quote-modal" class="quote-modal" aria-labelledby="quote-modal-title">
+    <div class="quote-modal-card">
+      <div class="quote-modal-head">
+        <div>
+          <h2 id="quote-modal-title" class="quote-modal-title">✍️ Günün Sözünü Paylaş</h2>
+          <p id="quote-modal-date" class="quote-modal-date">Günün Panosu</p>
+        </div>
+        <button type="button" id="quote-modal-close" class="icon-btn" aria-label="Kapat">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+            <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <form id="quote-form" class="quote-form">
+        <div class="form-group">
+          <label for="quote-author-input" class="form-label">İsminiz veya Rumuzunuz</label>
+          <input type="text" id="quote-author-input" class="form-input" placeholder="örn: Cihan, Anonim Öğrenci..." maxlength="30" />
+        </div>
+
+        <div class="form-group">
+          <label for="quote-text-input" class="form-label">Günün Sözü / Mesajınız</label>
+          <textarea id="quote-text-input" class="form-textarea" rows="3" placeholder="Bugün için bir söz, motivasyon cümlesi veya tatlı bir not bırak..." maxlength="220" required></textarea>
+          <span id="quote-char-count" class="char-count">0 / 220</span>
+        </div>
+
+        <div class="quote-modal-actions">
+          <button type="button" id="quote-modal-cancel" class="btn btn--secondary">Vazgeç</button>
+          <button type="submit" id="quote-modal-submit" class="btn btn--primary">Panoya Ekle 🚀</button>
+        </div>
+      </form>
     </div>
   </dialog>
 

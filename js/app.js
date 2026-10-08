@@ -335,6 +335,9 @@ function render(smooth = true) {
   updateStrip(smooth);
   renderCard('morning');
   renderCard('evening');
+  if (window.QuoteManager) {
+    QuoteManager.render(state.selected);
+  }
 }
 
 /* ── NOTLAR ──────────────────────────────────────────────────── */
@@ -746,6 +749,9 @@ async function main() {
 
   buildStrip();
   renderNotes();
+  if (window.QuoteManager) {
+    QuoteManager.init();
+  }
   bindEvents();
   render(false);
 
