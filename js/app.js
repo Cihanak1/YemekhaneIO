@@ -668,6 +668,16 @@ function bindEvents() {
     });
   }
 
+  // Geniş ekrana (860px+ iki sütun) geçildiğinde her iki öğünü birlikte göster
+  const desktopMq = window.matchMedia('(min-width: 860px)');
+  if (desktopMq && desktopMq.addEventListener) {
+    desktopMq.addEventListener('change', (e) => {
+      if (e.matches) {
+        setMealFilter('all');
+      }
+    });
+  }
+
   // Paylaş / Kopyala butonu
   const shareBtn = $('btn-share');
   if (shareBtn) {

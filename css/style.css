@@ -1584,7 +1584,7 @@ button { font: inherit; color: inherit; }
     background: #fff !important;
     color: #111 !important;
   }
-  .bg, .skip-link, .header-actions, .nav-btn, .today-btn, .day-strip, .meal-switch, .app-footer, .search-modal, .toast {
+  .bg, .skip-link, .header-actions, .nav-btn, .today-btn, .day-strip, .meal-switch, .daily-quote-section, .app-footer, .search-modal, .quote-modal, .toast {
     display: none !important;
   }
   .app {
@@ -1597,10 +1597,17 @@ button { font: inherit; color: inherit; }
     -webkit-text-fill-color: initial !important;
     font-size: 24pt !important;
   }
-  .menu-grid {
+  .menu-grid,
+  .menu-grid[data-filter="morning"],
+  .menu-grid[data-filter="evening"] {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
+    max-width: none !important;
     gap: 16px !important;
+  }
+  .menu-grid[data-filter="morning"] #card-evening,
+  .menu-grid[data-filter="evening"] #card-morning {
+    display: block !important;
   }
   .menu-card {
     background: #fff !important;
