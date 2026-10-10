@@ -336,7 +336,7 @@ function render(smooth = true) {
   renderCard('morning');
   renderCard('evening');
   if (window.QuoteManager) {
-    QuoteManager.render(state.selected);
+    QuoteManager.render(state.today);
   }
 }
 
@@ -678,6 +678,9 @@ function tick() {
   if (t !== state.today && state.sources) {
     const wasFollowing = state.selected === state.today;
     state.today = t;
+    if (window.QuoteManager && typeof QuoteManager.onDayChange === 'function') {
+      QuoteManager.onDayChange(t);
+    }
     recomputeBounds();
     buildStrip();
     if (wasFollowing) state.selected = t;
@@ -750,7 +753,7 @@ async function main() {
   buildStrip();
   renderNotes();
   if (window.QuoteManager) {
-    QuoteManager.init();
+    QuoteManager.init(state.today);
   }
   bindEvents();
   render(false);

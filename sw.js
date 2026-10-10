@@ -1,4 +1,4 @@
-const CACHE_NAME = 'yemekhane-v4.3';
+const CACHE_NAME = 'yemekhane-v5.0';
 const PRECACHE_URLS = [
   './',
   './index.html',
@@ -33,22 +33,21 @@ self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
   const url = new URL(event.request.url);
 
-  // Bypass chrome-extension and external analytics
+  // Bulut senkronizasyonu (ntfy.sh) veya harici API isteklerini önbelleğe alma
   if (!url.origin.includes(self.location.origin) && !url.origin.includes('fonts.googleapis.com') && !url.origin.includes('fonts.gstatic.com')) {
     return;
   }
 
+  // Güncel kodun her zaman yüklenmesi için Network-First, çevrimdışıysa Cache-Fallback
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      const fetchPromise = fetch(event.request).then((networkResponse) => {
+    fetch(event.request)
+      .then((networkResponse) => {
         if (networkResponse && networkResponse.status === 200 && networkResponse.type === 'basic') {
           const responseToCache = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => cache.put(event.request, responseToCache));
         }
         return networkResponse;
-      }).catch(() => cachedResponse);
-
-      return cachedResponse || fetchPromise;
-    })
+      })
+      .catch(() => caches.match(event.request))
   );
 });
