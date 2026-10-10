@@ -461,6 +461,41 @@ async function shareOrCopyMenu() {
 /* ═══════════════════════════════════════════════════════════════
    AY İÇİ ANLIK ARAMA (SEARCH MODAL)
    ═══════════════════════════════════════════════════════════════ */
+const TR_CHAR_MAP = {
+  i: '[iıİI]', ı: '[iıİI]', İ: '[iıİI]', I: '[iıİI]',
+  s: '[sşSŞ]', ş: '[sşSŞ]', S: '[sşSŞ]', Ş: '[sşSŞ]',
+  c: '[cçCÇ]', ç: '[cçCÇ]', C: '[cçCÇ]', Ç: '[cçCÇ]',
+  g: '[gğGĞ]', ğ: '[gğGĞ]', G: '[gğGĞ]', Ğ: '[gğGĞ]',
+  u: '[uüUÜ]', ü: '[uüUÜ]', U: '[uüUÜ]', Ü: '[uüUÜ]',
+  o: '[oöOÖ]', ö: '[oöOÖ]', O: '[oöOÖ]', Ö: '[oöOÖ]',
+};
+
+function buildTurkishRegex(query, global = false) {
+  const pattern = Array.from(query).map(ch => TR_CHAR_MAP[ch] || escapeRegex(ch)).join('');
+  return new RegExp(`(${pattern})`, global ? 'gi' : 'i');
+}
+
+function highlightTurkishMatch(text, regex) {
+  const str = String(text || '');
+  let result = '';
+  let lastIndex = 0;
+  regex.lastIndex = 0;
+  let match;
+
+  while ((match = regex.exec(str)) !== null) {
+    if (match[0].length === 0) {
+      regex.lastIndex++;
+      continue;
+    }
+    result += escapeHtml(str.slice(lastIndex, match.index));
+    result += `<mark>${escapeHtml(match[0])}</mark>`;
+    lastIndex = match.index + match[0].length;
+    if (!regex.global) break;
+  }
+  result += escapeHtml(str.slice(lastIndex));
+  return result;
+}
+
 function setupSearch() {
   const modal      = $('search-modal');
   const input      = $('search-input');
@@ -482,6 +517,16 @@ function setupSearch() {
     modal.close();
   }
 
+  function activateResultItem(item) {
+    if (!item) return;
+    const dateKey = item.dataset.date;
+    const meal    = item.dataset.meal;
+
+    closeModal();
+    if (dateKey) selectDate(dateKey);
+    if (meal && window.innerWidth < 860) setMealFilter(meal);
+  }
+
   searchBtn.addEventListener('click', openModal);
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
 
@@ -497,15 +542,44 @@ function setupSearch() {
     renderSearchResults(e.target.value.trim());
   });
 
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowDown') {
+      const first = resultsEl.querySelector('.search-result-item');
+      if (first) {
+        e.preventDefault();
+        first.focus();
+      }
+    } else if (e.key === 'Enter') {
+      const first = resultsEl.querySelector('.search-result-item');
+      if (first) {
+        e.preventDefault();
+        activateResultItem(first);
+      }
+    }
+  });
+
   resultsEl.addEventListener('click', (e) => {
     const item = e.target.closest('.search-result-item');
-    if (!item) return;
-    const dateKey = item.dataset.date;
-    const meal    = item.dataset.meal;
+    if (item) activateResultItem(item);
+  });
 
-    closeModal();
-    if (dateKey) selectDate(dateKey);
-    if (meal && window.innerWidth < 860) setMealFilter(meal);
+  resultsEl.addEventListener('keydown', (e) => {
+    const item = e.target.closest('.search-result-item');
+    if (!item) return;
+
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      activateResultItem(item);
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      const next = item.nextElementSibling;
+      if (next) next.focus();
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      const prev = item.previousElementSibling;
+      if (prev) prev.focus();
+      else input.focus();
+    }
   });
 
   function renderSearchResults(query) {
@@ -515,7 +589,8 @@ function setupSearch() {
       return;
     }
 
-    const q = query.toLocaleLowerCase('tr');
+    const matchRegex = buildTurkishRegex(query, false);
+    const highlightRegex = buildTurkishRegex(query, true);
     const matches = [];
 
     state.dates.forEach(dateKey => {
@@ -525,7 +600,7 @@ function setupSearch() {
       const mMenu = state.sources.morning?.getDay(dateKey);
       if (mMenu) {
         mMenu.items.forEach(it => {
-          if (it.name.toLocaleLowerCase('tr').includes(q)) {
+          if (matchRegex.test(it.name)) {
             matches.push({ dateKey, dateInfo: d, meal: 'morning', mealLabel: '☀️ Sabah', item: it });
           }
         });
@@ -535,7 +610,7 @@ function setupSearch() {
       const eMenu = state.sources.evening?.getDay(dateKey);
       if (eMenu) {
         eMenu.items.forEach(it => {
-          if (it.name.toLocaleLowerCase('tr').includes(q)) {
+          if (matchRegex.test(it.name)) {
             matches.push({ dateKey, dateInfo: d, meal: 'evening', mealLabel: '🌙 Akşam', item: it });
           }
         });
@@ -548,11 +623,10 @@ function setupSearch() {
       return;
     }
 
-    statusEl.textContent = `${matches.length} gün bulundu:`;
+    statusEl.textContent = `${matches.length} sonuç bulundu:`;
 
-    const regex = new RegExp(`(${escapeRegex(query)})`, 'gi');
     resultsEl.innerHTML = matches.map(m => {
-      const highlighted = escapeHtml(m.item.name).replace(regex, '<mark>$1</mark>');
+      const highlighted = highlightTurkishMatch(m.item.name, highlightRegex);
       return `<li class="search-result-item search-result-item--${m.meal}" data-date="${m.dateKey}" data-meal="${m.meal}" tabindex="0" role="option">` +
         `<div class="search-item-info">` +
           `<span class="search-item-dish">${highlighted}</span>` +
