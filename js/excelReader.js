@@ -386,6 +386,14 @@ const ExcelReader = (() => {
       .replace(/\/+/g, '/');
   }
 
+  function formatDisplayName(s) {
+    return String(s || '')
+      .replace(/^\*+\s*/, '')
+      .replace(/\s*\/{2,}\s*/g, ' / ')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+  }
+
   /**
    * Ham gün kaydını görünüm modeline çevirir.
    * yemekler[] (temiz isimler) ile ogeler[] (gramaj/kategori) eşleştirilir;
@@ -404,16 +412,16 @@ const ExcelReader = (() => {
       if (idx !== -1) used.add(idx);
       const o = idx !== -1 ? ogeler[idx] : {};
       return {
-        name:     String(name).trim(),
-        gramaj:   o.gramaj   || '',
-        enerji:   o.enerji   || '',
-        kategori: o.kategori || '',
+        name:     formatDisplayName(name),
+        gramaj:   String(o.gramaj || '').trim(),
+        enerji:   String(o.enerji || '').trim(),
+        kategori: String(o.kategori || '').trim(),
       };
     });
 
     const extras = ogeler
       .filter((o, j) => !used.has(j) && isExtra(o.ad))
-      .map(o => String(o.ad).replace(/^\*+\s*/, '').trim());
+      .map(o => formatDisplayName(o.ad));
 
     return {
       foods:    items.map(it => it.name),

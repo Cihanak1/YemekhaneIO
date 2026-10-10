@@ -84,7 +84,7 @@
         },
         {
           "kategori": "2. Yemek Çeşitleri",
-          "ad": "Etsiz Kuru Fasülye /Kabak kalye//Tavuk Fajita",
+          "ad": "Etsiz Kuru Fasülye / Kabak Kalye / Tavuk Fajita",
           "gramaj": "",
           "enerji": ""
         },
@@ -1186,7 +1186,7 @@
       "ogun": "Akşam Yemeği",
       "yemekler": [
         "Yayla Çorbası / Şehriye Çorbası",
-        "Etsiz Kuru Fasülye / Mevsim Soslu Karışık Kızartma // Tavuk Çöp Şiş",
+        "Etsiz Kuru Fasülye / Mevsim Soslu Karışık Kızartma / Tavuk Çöp Şiş",
         "Bulgur Pilavı",
         "Haydari",
         "Tulumba"
@@ -1200,7 +1200,7 @@
         },
         {
           "kategori": "2. Yemek Çeşitleri",
-          "ad": "Etsiz Kuru Fasülye /Mevsim Soslu Karışık Kızartma//Tavuk Çöp Şiş",
+          "ad": "Etsiz Kuru Fasülye / Mevsim Soslu Karışık Kızartma / Tavuk Çöp Şiş",
           "gramaj": "",
           "enerji": ""
         },
@@ -1237,7 +1237,7 @@
       ],
       "foods": [
         "Yayla Çorbası / Şehriye Çorbası",
-        "Etsiz Kuru Fasülye / Mevsim Soslu Karışık Kızartma // Tavuk Çöp Şiş",
+        "Etsiz Kuru Fasülye / Mevsim Soslu Karışık Kızartma / Tavuk Çöp Şiş",
         "Bulgur Pilavı",
         "Haydari",
         "Tulumba"
