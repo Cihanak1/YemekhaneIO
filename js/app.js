@@ -699,6 +699,17 @@ function bindEvents() {
 
   // Klavye kısayolları
   document.addEventListener('keydown', (e) => {
+    if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+      e.preventDefault();
+      const modal = $('search-modal');
+      if (modal && !modal.open) {
+        $('btn-search')?.click();
+      }
+      return;
+    }
+
+    if (e.ctrlKey || e.altKey || e.metaKey) return;
+    if (document.querySelector('dialog[open]')) return;
     if (e.target.closest('input, textarea, select, [contenteditable="true"]')) return;
 
     if (e.key === 'ArrowLeft') {
@@ -709,7 +720,7 @@ function bindEvents() {
       go(1);
     } else if (e.key === 't' || e.key === 'T') {
       selectDate(state.today);
-    } else if (e.key === '/' || (e.ctrlKey && e.key.toLowerCase() === 'k')) {
+    } else if (e.key === '/') {
       e.preventDefault();
       const modal = $('search-modal');
       if (modal && !modal.open) {
@@ -774,12 +785,13 @@ document.addEventListener('visibilitychange', () => {
    MAIN
    ═══════════════════════════════════════════════════════════════ */
 async function main() {
-  state.today = state.selected = todayKey();
-  $('header-clock').textContent = timeFmt.format(new Date());
+  const now = new Date();
+  state.today = state.selected = todayKey(now);
+  $('header-clock').textContent = timeFmt.format(now);
   renderHeader();
 
-  // Mobil başlangıçta saat 14:00'dan sonra ise akşam yemeğini öne çıkar
-  const currentHour = new Date().getHours();
+  // Mobil başlangıçta Türkiye saatine göre 14:00'dan sonra ise akşam yemeğini öne çıkar
+  const currentHour = parseInt(timeFmt.format(now).split(':')[0], 10) || 0;
   if (window.innerWidth < 860) {
     setMealFilter(currentHour >= 14 ? 'evening' : 'morning');
   } else {
@@ -813,7 +825,10 @@ async function main() {
 
   // Bugün menü listesinde yoksa (ör. farklı ayda açıldıysa) menüsü olan en yakın güne ayarla
   if (!dateSet.has(state.today) && state.dates.length > 0) {
-    state.selected = state.dates[0];
+    const todayMs = keyToUTC(state.today);
+    state.selected = state.dates.reduce((closest, candidate) =>
+      Math.abs(keyToUTC(candidate) - todayMs) < Math.abs(keyToUTC(closest) - todayMs) ? candidate : closest
+    , state.dates[0]);
   }
 
   // Tarih seçici girdisinin sınırlarını ayarla
