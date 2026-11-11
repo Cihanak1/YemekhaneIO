@@ -132,43 +132,20 @@
     <!-- ── HATA ALANI ──────────────────────────────────────── -->
     <div id="error-container" role="alert"></div>
 
-    <!-- ── ÖZEL DUYURU / YAZI ALANI (ÖN KISIMDA SABİT/DÜZENLENEBİLİR) ── -->
-    <section id="custom-banner" class="custom-banner" aria-label="Özel Not ve Duyuru Panosu">
-      <!-- Görüntüleme Modu -->
-      <div id="banner-view" class="banner-view" role="region" tabindex="0" title="Yazıyı düzenlemek için tıklayın">
+    <!-- ── ÖZEL DUYURU / YAZI ALANI (KOD İÇİNE GÖMÜLÜ SABİT BANNER) ── -->
+    <!-- 
+      DİKKAT: Bu duyuru doğrudan kod içine gömülüdür. 
+      Sitedeki diğer ziyaretçiler veya kullanıcılar bu yazıyı değiştiremez / düzenleyemez.
+      Yazıyı değiştirmek için aşağıdaki <p id="banner-text"> içeriğini doğrudan düzenleyebilirsiniz.
+    -->
+    <aside id="custom-banner" class="custom-banner" aria-label="Günün Özel Duyurusu">
+      <div class="banner-view banner-view--static">
         <div class="banner-content">
-          <span class="banner-badge" aria-hidden="true">📢 GÜNÜN ÖZEL NOTU</span>
-          <p id="banner-text" class="banner-text is-placeholder">Buraya sitenin önünde kocaman görünecek özel bir duyuru, not veya yazı girmek için tıklayın...</p>
-        </div>
-        <div class="banner-actions">
-          <button type="button" id="btn-edit-banner" class="icon-btn banner-btn" title="Yazıyı Düzenle" aria-label="Yazıyı düzenle">
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </button>
-          <button type="button" id="btn-delete-banner" class="icon-btn banner-btn" title="Yazıyı Temizle" aria-label="Yazıyı temizle" hidden>
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
-              <path d="M18 6L6 18M6 6l12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </button>
+          <span class="banner-badge" aria-hidden="true">📢 GÜNÜN ÖZEL DUYURUSU</span>
+          <p id="banner-text" class="banner-text">Afiyet olsun! Günlük taze menünüz hazır.</p>
         </div>
       </div>
-
-      <!-- Düzenleme Modu -->
-      <form id="banner-form" class="banner-form" hidden>
-        <div class="banner-input-wrap">
-          <label for="banner-input" class="visually-hidden">Özel Yazı veya Duyuru</label>
-          <textarea id="banner-input" class="banner-textarea" rows="2" placeholder="Sitenin en önünde büyük puntolarla görünmesini istediğiniz yazıyı buraya yazın..." maxlength="300"></textarea>
-          <div class="banner-form-actions">
-            <span id="banner-char-count" class="char-count">0 / 300</span>
-            <div class="banner-btn-group">
-              <button type="button" id="btn-cancel-banner" class="btn btn--secondary btn-sm">Vazgeç</button>
-              <button type="submit" id="btn-save-banner" class="btn btn--primary btn-sm">Kaydet &amp; Yayınla</button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </section>
+    </aside>
 
     <!-- ── MENÜ IZGARASI ───────────────────────────────────── -->
     <main id="menu-grid" class="menu-grid" tabindex="-1">
