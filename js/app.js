@@ -530,13 +530,18 @@ function setupSearch() {
   searchBtn.addEventListener('click', openModal);
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
 
-  modal.addEventListener('click', (e) => {
-    // Backdrop tıklaması ile kapat
-    const rect = modal.getBoundingClientRect();
-    const isInDialog = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
-                        rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-    if (!isInDialog) closeModal();
-  });
+  // Fallback for browsers without closedby support
+  if (!('closedBy' in HTMLDialogElement.prototype)) {
+    modal.addEventListener('click', (e) => {
+      if (e.target !== modal) return;
+      const rect = modal.getBoundingClientRect();
+      const isDialogContent = (
+        rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+        rect.left <= e.clientX && e.clientX <= rect.left + rect.width
+      );
+      if (!isDialogContent) closeModal();
+    });
+  }
 
   input.addEventListener('input', (e) => {
     renderSearchResults(e.target.value.trim());

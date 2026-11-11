@@ -263,6 +263,7 @@ button { font: inherit; color: inherit; }
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
+  text-wrap: balance;
   background: linear-gradient(135deg, var(--text-1) 0%, var(--text-2) 100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -570,6 +571,7 @@ button { font: inherit; color: inherit; }
   font-weight: 700;
   letter-spacing: -0.02em;
   line-height: 1.25;
+  text-wrap: balance;
 }
 
 .card-meta:empty { display: none; }
@@ -725,8 +727,8 @@ button { font: inherit; color: inherit; }
   text-align: center;
 }
 .card-empty-icon { font-size: 2.4rem; line-height: 1; }
-.card-empty-title { font-size: 1rem; font-weight: 600; color: var(--text-2); }
-.card-empty-desc { font-size: 0.85rem; color: var(--text-3); max-width: 300px; }
+.card-empty-title { font-size: 1rem; font-weight: 600; color: var(--text-2); text-wrap: balance; }
+.card-empty-desc { font-size: 0.85rem; color: var(--text-3); max-width: 300px; text-wrap: pretty; }
 
 /* ── SKELETON ────────────────────────────────────────────────── */
 .skeleton-list { display: grid; gap: 8px; }
@@ -1056,6 +1058,16 @@ button { font: inherit; color: inherit; }
   background: rgb(var(--danger-rgb) / 0.12);
 }
 
+/* ── MODERN WEB GUIDANCE: DIALOG & OVERLAY SCROLL LOCK ── */
+dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+
 /* ── GÜNLÜK NOT MODALI ──────────────────────────────────────── */
 .quote-modal {
   margin: auto;
@@ -1073,6 +1085,8 @@ button { font: inherit; color: inherit; }
   background: rgb(0 0 0 / 0.78);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  overflow: hidden;
+  overscroll-behavior: contain;
 }
 
 .quote-modal-card {
@@ -1145,6 +1159,12 @@ button { font: inherit; color: inherit; }
 .form-textarea:focus {
   border-color: var(--info);
   box-shadow: 0 0 0 3px rgb(var(--info-rgb) / 0.15);
+}
+
+.form-input:user-invalid,
+.form-textarea:user-invalid {
+  border-color: #fda4af;
+  background: rgb(var(--danger-rgb) / 0.12);
 }
 
 .form-textarea {
@@ -1392,6 +1412,8 @@ button { font: inherit; color: inherit; }
   background: rgb(0 0 0 / 0.75);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
+  overflow: hidden;
+  overscroll-behavior: contain;
 }
 
 .search-modal-card {

@@ -1,6 +1,6 @@
 {
-  "baslik": "EKİM AYI KAHVALTI MENÜSÜ",
-  "ay": "Ekim 2026",
+  "baslik": "KASIM AYI KAHVALTI MENÜSÜ",
+  "ay": "Kasım 2026",
   "notlar": [
     "*Siyah/Yeşil Zeytin verilen günlerde her iki çeşit de bulundurulacaktır.",
     "**Çay/Bitki Çayından her ikisi de bulundurulacaktır. Öğrenci istediği çeşitten sadece birini alacaktır.",
@@ -11,397 +11,31 @@
     "unvan": "Gençlik ve Spor İl Müdürü"
   },
   "gunler": {
-    "01.10.2026": {
-      "tarih": "01.10.2026",
-      "gun": "Perşembe",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Patates Kavurma",
-        "Karışık Pizza",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kavurma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Pizza",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Kaşar Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Patates Kavurma",
-        "Karışık Pizza",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "02.10.2026": {
-      "tarih": "02.10.2026",
-      "gun": "Cuma",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Menemen",
-        "Patates Kızartma",
-        "Çikolatalı Kek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Menemen",
-          "gramaj": "150 g (1 adet L boy yumurta)",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çikolatalı Kek",
-          "gramaj": "60 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Menemen",
-        "Patates Kızartma",
-        "Çikolatalı Kek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "03.10.2026": {
-      "tarih": "03.10.2026",
-      "gun": "Cumartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Karışık Kızartma",
-        "Simit",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Simit",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Labne Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Karışık Kızartma",
-        "Simit",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "04.10.2026": {
-      "tarih": "04.10.2026",
+    "01.11.2026": {
+      "tarih": "01.11.2026",
       "gun": "Pazar",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sade Omlet",
-        "Salçalı Sosis",
-        "Peynirli Börek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Sade Omlet",
-          "gramaj": "1 adet L boy yumurta",
-          "enerji": ""
-        },
-        {
-          "ad": "Salçalı Sosis",
-          "gramaj": "100 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Peynirli Börek",
-          "gramaj": "120 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Sade Omlet",
-        "Salçalı Sosis",
-        "Peynirli Börek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "05.10.2026": {
-      "tarih": "05.10.2026",
-      "gun": "Pazartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Zeytinli/Peynirli Açma",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Zeytinli/Peynirli Açma",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Kaşar Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Zeytinli/Peynirli Açma",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "06.10.2026": {
-      "tarih": "06.10.2026",
-      "gun": "Salı",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Kaşarlı Omlet",
-        "Patates Salata",
-        "Dere Otlu Poğaça",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Kaşarlı Omlet",
-          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Salata",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Dere Otlu Poğaça",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Kaşarlı Omlet",
-        "Patates Salata",
-        "Dere Otlu Poğaça",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "07.10.2026": {
-      "tarih": "07.10.2026",
-      "gun": "Çarşamba",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
+        "Peynirli Omlet",
         "Sosis Kızartma",
-        "Ispanaklı Börek",
+        "Sade Poğaça",
         "Labne Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
+          "ad": "Peynirli Omlet",
+          "gramaj": "30 g beyaz p.+ 1 adet L boy yumurta",
           "enerji": ""
         },
         {
           "ad": "Sosis Kızartma",
-          "gramaj": "100 g",
+          "gramaj": "100 gr",
           "enerji": ""
         },
         {
-          "ad": "Ispanaklı Börek",
-          "gramaj": "120 g",
+          "ad": "Sade Poğaça",
+          "gramaj": "1 adet",
           "enerji": ""
         },
         {
@@ -431,82 +65,21 @@
         }
       ],
       "foods": [
-        "Haşlanmış Yumurta",
+        "Peynirli Omlet",
         "Sosis Kızartma",
-        "Ispanaklı Börek",
+        "Sade Poğaça",
         "Labne Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "08.10.2026": {
-      "tarih": "08.10.2026",
-      "gun": "Perşembe",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Sucuklu Omlet",
-        "Karışık Kızartma",
-        "Kakaolu Kek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Sucuklu Omlet",
-          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Kakaolu Kek",
-          "gramaj": "60 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Sucuklu Omlet",
-        "Karışık Kızartma",
-        "Kakaolu Kek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "09.10.2026": {
-      "tarih": "09.10.2026",
-      "gun": "Cuma",
+    "02.11.2026": {
+      "tarih": "02.11.2026",
+      "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
         "Patates Kızartması",
-        "Kek+ Bal+Tereyağ",
+        "Zeytinli/Peynirli Açma",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -522,8 +95,8 @@
           "enerji": ""
         },
         {
-          "ad": "Kek+ Bal+Tereyağ",
-          "gramaj": "50+20 g+10 g",
+          "ad": "Zeytinli/Peynirli Açma",
+          "gramaj": "1 adet",
           "enerji": ""
         },
         {
@@ -555,26 +128,331 @@
       "foods": [
         "Haşlanmış Yumurta",
         "Patates Kızartması",
-        "Kek+ Bal+Tereyağ",
+        "Zeytinli/Peynirli Açma",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "10.10.2026": {
-      "tarih": "10.10.2026",
-      "gun": "Cumartesi",
+    "03.11.2026": {
+      "tarih": "03.11.2026",
+      "gun": "Salı",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Peynirli Omlet",
-        "Patates Kavurması",
-        "Peynirli Börek",
-        "Labne Peynir",
+        "Kaşarlı Omlet",
+        "Patates Kızartma",
+        "Dere Otlu Poğaça",
+        "Krem Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Peynirli Omlet",
-          "gramaj": "30 g beyaz p.+ 1 adet L boy yumurta",
+          "ad": "Kaşarlı Omlet",
+          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kızartma",
+          "gramaj": "150 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Dere Otlu Poğaça",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Krem Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Kaşarlı Omlet",
+        "Patates Kızartma",
+        "Dere Otlu Poğaça",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "04.11.2026": {
+      "tarih": "04.11.2026",
+      "gun": "Çarşamba",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Sosis Kızartma",
+        "Peynirli/Ispanaklı Börek",
+        "Kaşar Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Sosis Kızartma",
+          "gramaj": "100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Peynirli/Ispanaklı Börek",
+          "gramaj": "120 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Kaşar Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Sosis Kızartma",
+        "Peynirli/Ispanaklı Börek",
+        "Kaşar Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "05.11.2026": {
+      "tarih": "05.11.2026",
+      "gun": "Perşembe",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Sucuklu Omlet",
+        "Karışık Kızartma",
+        "Simit",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Sucuklu Omlet",
+          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Kızartma",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Simit",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Krem Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Sucuklu Omlet",
+        "Karışık Kızartma",
+        "Simit",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "06.11.2026": {
+      "tarih": "06.11.2026",
+      "gun": "Cuma",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Haşlanmış Patates+Domates-Salatalık",
+        "Karışık Pizza",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Haşlanmış Patates+Domates-Salatalık",
+          "gramaj": "150 g+100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Pizza",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Haşlanmış Patates+Domates-Salatalık",
+        "Karışık Pizza",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "07.11.2026": {
+      "tarih": "07.11.2026",
+      "gun": "Cumartesi",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Menemen",
+        "Salçalı Sosis",
+        "Patatesli Börek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Menemen",
+          "gramaj": "150 g (1 adet L boy yumurta)",
+          "enerji": ""
+        },
+        {
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Patatesli Börek",
+          "gramaj": "60 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Menemen",
+        "Salçalı Sosis",
+        "Patatesli Börek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "08.11.2026": {
+      "tarih": "08.11.2026",
+      "gun": "Pazar",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Kek + Sürülebilir Çikolata",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
           "enerji": ""
         },
         {
@@ -583,69 +461,8 @@
           "enerji": ""
         },
         {
-          "ad": "Peynirli Börek",
-          "gramaj": "120 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Labne Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Peynirli Omlet",
-        "Patates Kavurması",
-        "Peynirli Börek",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "11.10.2026": {
-      "tarih": "11.10.2026",
-      "gun": "Pazar",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Karışık Pizza",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Pizza",
-          "gramaj": "150 g",
+          "ad": "Kek + Sürülebilir Çikolata",
+          "gramaj": "60 g + 20 g",
           "enerji": ""
         },
         {
@@ -676,21 +493,21 @@
       ],
       "foods": [
         "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Karışık Pizza",
+        "Patates Kavurması",
+        "Kek + Sürülebilir Çikolata",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "12.10.2026": {
-      "tarih": "12.10.2026",
+    "09.11.2026": {
+      "tarih": "09.11.2026",
       "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Sade Omlet",
-        "Patates Kızartma",
-        "Çikolatalı Kek",
-        "Kaşar Peynir",
+        "Patates Kızartması",
+        "Sade Poğaça",
+        "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
@@ -700,69 +517,8 @@
           "enerji": ""
         },
         {
-          "ad": "Patates Kızartma",
+          "ad": "Patates Kızartması",
           "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çikolatalı Kek",
-          "gramaj": "60 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Kaşar Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Sade Omlet",
-        "Patates Kızartma",
-        "Çikolatalı Kek",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "13.10.2026": {
-      "tarih": "13.10.2026",
-      "gun": "Salı",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Salçalı Sosis",
-        "Sade Poğaça",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Salçalı Sosis",
-          "gramaj": "100 g",
           "enerji": ""
         },
         {
@@ -797,204 +553,21 @@
         }
       ],
       "foods": [
-        "Haşlanmış Yumurta",
-        "Salçalı Sosis",
+        "Sade Omlet",
+        "Patates Kızartması",
         "Sade Poğaça",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "14.10.2026": {
-      "tarih": "14.10.2026",
-      "gun": "Çarşamba",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Kaşarlı Omlet",
-        "Karışık Kızartma",
-        "Zeytinli/Peynirli Açma",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Kaşarlı Omlet",
-          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Zeytinli/Peynirli Açma",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Kaşarlı Omlet",
-        "Karışık Kızartma",
-        "Zeytinli/Peynirli Açma",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "15.10.2026": {
-      "tarih": "15.10.2026",
-      "gun": "Perşembe",
+    "10.11.2026": {
+      "tarih": "10.11.2026",
+      "gun": "Salı",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
-        "Patates Salata",
-        "Sürülebilir Çikolata+ Kek",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Salata",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Sürülebilir Çikolata+ Kek",
-          "gramaj": "20 g +50gr",
-          "enerji": ""
-        },
-        {
-          "ad": "Labne Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Patates Salata",
-        "Sürülebilir Çikolata+ Kek",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "16.10.2026": {
-      "tarih": "16.10.2026",
-      "gun": "Cuma",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Menemen",
-        "Patates Kızartma",
-        "Simit",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Menemen",
-          "gramaj": "150 g (1 adet L boy yumurta)",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Simit",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Krem Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Menemen",
-        "Patates Kızartma",
-        "Simit",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "17.10.2026": {
-      "tarih": "17.10.2026",
-      "gun": "Cumartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Karışık Kızartma",
-        "Peynirli Börek",
+        "Salçalı Sosis",
+        "Peynirli/Ispanaklı Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -1005,12 +578,12 @@
           "enerji": ""
         },
         {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 g",
           "enerji": ""
         },
         {
-          "ad": "Peynirli Börek",
+          "ad": "Peynirli/Ispanaklı Börek",
           "gramaj": "120 g",
           "enerji": ""
         },
@@ -1042,19 +615,263 @@
       ],
       "foods": [
         "Haşlanmış Yumurta",
-        "Karışık Kızartma",
-        "Peynirli Börek",
+        "Salçalı Sosis",
+        "Peynirli/Ispanaklı Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "18.10.2026": {
-      "tarih": "18.10.2026",
+    "11.11.2026": {
+      "tarih": "11.11.2026",
+      "gun": "Çarşamba",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Peynirli Omlet",
+        "Karışık Kızartma",
+        "Zeytinli/Peynirli Açma",
+        "Kaşar Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Peynirli Omlet",
+          "gramaj": "30 g beyaz p.+ 1 adet L boy yumurta",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Kızartma",
+          "gramaj": "150 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Zeytinli/Peynirli Açma",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Kaşar Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Peynirli Omlet",
+        "Karışık Kızartma",
+        "Zeytinli/Peynirli Açma",
+        "Kaşar Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "12.11.2026": {
+      "tarih": "12.11.2026",
+      "gun": "Perşembe",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Patates Kızartması",
+        "Domates-Salatalık",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kızartması",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Domates-Salatalık",
+          "gramaj": "100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Patates Kızartması",
+        "Domates-Salatalık",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "13.11.2026": {
+      "tarih": "13.11.2026",
+      "gun": "Cuma",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Menemen",
+        "Patates Salatası",
+        "Simit",
+        "Labne Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Menemen",
+          "gramaj": "150 g (1 adet L boy yumurta)",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Salatası",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Simit",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Labne Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Menemen",
+        "Patates Salatası",
+        "Simit",
+        "Labne Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "14.11.2026": {
+      "tarih": "14.11.2026",
+      "gun": "Cumartesi",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Salçalı Sosis",
+        "Ispanaklı Börek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Ispanaklı Börek",
+          "gramaj": "60 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Salçalı Sosis",
+        "Ispanaklı Börek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "15.11.2026": {
+      "tarih": "15.11.2026",
       "gun": "Pazar",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Sucuklu Omlet",
-        "Patates Kavurma",
+        "Patates Kızartması",
         "Dere Otlu Poğaça",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
@@ -1066,8 +883,8 @@
           "enerji": ""
         },
         {
-          "ad": "Patates Kavurma",
-          "gramaj": "150 g",
+          "ad": "Patates Kızartması",
+          "gramaj": "150g",
           "enerji": ""
         },
         {
@@ -1103,20 +920,20 @@
       ],
       "foods": [
         "Sucuklu Omlet",
-        "Patates Kavurma",
+        "Patates Kızartması",
         "Dere Otlu Poğaça",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "19.10.2026": {
-      "tarih": "19.10.2026",
+    "16.11.2026": {
+      "tarih": "16.11.2026",
       "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
-        "Sosis Kızartma",
-        "Reçel",
+        "Patates Kızartması",
+        "Sade Poğaça",
         "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -1127,13 +944,13 @@
           "enerji": ""
         },
         {
-          "ad": "Sosis Kızartma",
-          "gramaj": "100 g",
+          "ad": "Patates Kızartması",
+          "gramaj": "150 g",
           "enerji": ""
         },
         {
-          "ad": "Reçel",
-          "gramaj": "20 g",
+          "ad": "Sade Poğaça",
+          "gramaj": "1 adet",
           "enerji": ""
         },
         {
@@ -1164,20 +981,20 @@
       ],
       "foods": [
         "Haşlanmış Yumurta",
-        "Sosis Kızartma",
-        "Reçel",
+        "Patates Kızartması",
+        "Sade Poğaça",
         "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "20.10.2026": {
-      "tarih": "20.10.2026",
+    "17.11.2026": {
+      "tarih": "17.11.2026",
       "gun": "Salı",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Peynirli Omlet",
-        "Patates Kızartma",
-        "Karışık Pizza",
+        "Sosis Kızartma",
+        "Simit",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -1188,13 +1005,13 @@
           "enerji": ""
         },
         {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
+          "ad": "Sosis Kızartma",
+          "gramaj": "100 gr",
           "enerji": ""
         },
         {
-          "ad": "Karışık Pizza",
-          "gramaj": "150 g",
+          "ad": "Simit",
+          "gramaj": "1 adet",
           "enerji": ""
         },
         {
@@ -1225,20 +1042,142 @@
       ],
       "foods": [
         "Peynirli Omlet",
-        "Patates Kızartma",
-        "Karışık Pizza",
+        "Sosis Kızartma",
+        "Simit",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "21.10.2026": {
-      "tarih": "21.10.2026",
+    "18.11.2026": {
+      "tarih": "18.11.2026",
       "gun": "Çarşamba",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Karışık Pizza",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kavurması",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Pizza",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Krem Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Karışık Pizza",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "19.11.2026": {
+      "tarih": "19.11.2026",
+      "gun": "Perşembe",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Sade Omlet",
+        "Sosis Kızartma+ Domates-Salatalık",
+        "Kek +Reçel",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Sade Omlet",
+          "gramaj": "1 adet L boy yumurta",
+          "enerji": ""
+        },
+        {
+          "ad": "Sosis Kızartma+ Domates-Salatalık",
+          "gramaj": "100 g+100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Kek +Reçel",
+          "gramaj": "60 g+ 20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Sade Omlet",
+        "Sosis Kızartma+ Domates-Salatalık",
+        "Kek +Reçel",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "20.11.2026": {
+      "tarih": "20.11.2026",
+      "gun": "Cuma",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
         "Karışık Kızartma",
-        "Sade Poğaça",
+        "Zeytinli/Peynirli Açma",
         "Labne Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -1254,7 +1193,7 @@
           "enerji": ""
         },
         {
-          "ad": "Sade Poğaça",
+          "ad": "Zeytinli/Peynirli Açma",
           "gramaj": "1 adet",
           "enerji": ""
         },
@@ -1287,35 +1226,35 @@
       "foods": [
         "Haşlanmış Yumurta",
         "Karışık Kızartma",
-        "Sade Poğaça",
+        "Zeytinli/Peynirli Açma",
         "Labne Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "22.10.2026": {
-      "tarih": "22.10.2026",
-      "gun": "Perşembe",
+    "21.11.2026": {
+      "tarih": "21.11.2026",
+      "gun": "Cumartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sade Omlet",
-        "Patates Salata",
-        "Çikolatalı Kek",
+        "Kaşarlı Omlet",
+        "Patates Salatası",
+        "Peynirli Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Sade Omlet",
-          "gramaj": "1 adet L boy yumurta",
+          "ad": "Kaşarlı Omlet",
+          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
           "enerji": ""
         },
         {
-          "ad": "Patates Salata",
+          "ad": "Patates Salatası",
           "gramaj": "150 g",
           "enerji": ""
         },
         {
-          "ad": "Çikolatalı Kek",
+          "ad": "Peynirli Börek",
           "gramaj": "60 g",
           "enerji": ""
         },
@@ -1346,21 +1285,21 @@
         }
       ],
       "foods": [
-        "Sade Omlet",
-        "Patates Salata",
-        "Çikolatalı Kek",
+        "Kaşarlı Omlet",
+        "Patates Salatası",
+        "Peynirli Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "23.10.2026": {
-      "tarih": "23.10.2026",
-      "gun": "Cuma",
+    "22.11.2026": {
+      "tarih": "22.11.2026",
+      "gun": "Pazar",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Peynirli Börek",
+        "Sosis Kızartma",
+        "Peynirli/Ispanaklı Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -1371,12 +1310,12 @@
           "enerji": ""
         },
         {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
+          "ad": "Sosis Kızartma",
+          "gramaj": "100 gr",
           "enerji": ""
         },
         {
-          "ad": "Peynirli Börek",
+          "ad": "Peynirli/Ispanaklı Börek",
           "gramaj": "120 g",
           "enerji": ""
         },
@@ -1408,153 +1347,31 @@
       ],
       "foods": [
         "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Peynirli Börek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "24.10.2026": {
-      "tarih": "24.10.2026",
-      "gun": "Cumartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Kaşarlı Omlet",
-        "Karışık Kızartma",
-        "Sucuklu Yumurta",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Kaşarlı Omlet",
-          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Sucuklu Yumurta",
-          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
-          "enerji": ""
-        },
-        {
-          "ad": "Krem Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Kaşarlı Omlet",
-        "Karışık Kızartma",
-        "Sucuklu Yumurta",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "25.10.2026": {
-      "tarih": "25.10.2026",
-      "gun": "Pazar",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
         "Sosis Kızartma",
-        "Simit",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Sosis Kızartma",
-          "gramaj": "100 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Simit",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Sosis Kızartma",
-        "Simit",
+        "Peynirli/Ispanaklı Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "26.10.2026": {
-      "tarih": "26.10.2026",
+    "23.11.2026": {
+      "tarih": "23.11.2026",
       "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sucuklu Omlet",
-        "Patates Salatası",
+        "Peynirli Omlet",
+        "Patates Kızartması",
         "Dere Otlu Poğaça",
-        "Krem Peynir",
+        "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Sucuklu Omlet",
-          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
+          "ad": "Peynirli Omlet",
+          "gramaj": "30 g beyaz p.+ 1 adet L boy yumurta",
           "enerji": ""
         },
         {
-          "ad": "Patates Salatası",
+          "ad": "Patates Kızartması",
           "gramaj": "150 g",
           "enerji": ""
         },
@@ -1564,67 +1381,6 @@
           "enerji": ""
         },
         {
-          "ad": "Krem Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Sucuklu Omlet",
-        "Patates Salatası",
-        "Dere Otlu Poğaça",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "27.10.2026": {
-      "tarih": "27.10.2026",
-      "gun": "Salı",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Kek+ Bal+Tereyağ",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Kek+ Bal+Tereyağ",
-          "gramaj": "50g+20 g+10 g",
-          "enerji": ""
-        },
-        {
           "ad": "Beyaz Peynir",
           "gramaj": "40 g",
           "enerji": ""
@@ -1651,37 +1407,37 @@
         }
       ],
       "foods": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Kek+ Bal+Tereyağ",
+        "Peynirli Omlet",
+        "Patates Kızartması",
+        "Dere Otlu Poğaça",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "28.10.2026": {
-      "tarih": "28.10.2026",
-      "gun": "Çarşamba",
+    "24.11.2026": {
+      "tarih": "24.11.2026",
+      "gun": "Salı",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sucuklu Omlet",
-        "Patates Kavurma",
-        "Zeytinli/Peynirli Açma",
+        "Haşlanmış Yumurta",
+        "Salçalı Sosis",
+        "Simit",
         "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Sucuklu Omlet",
-          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
           "enerji": ""
         },
         {
-          "ad": "Patates Kavurma",
-          "gramaj": "150 g",
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 g",
           "enerji": ""
         },
         {
-          "ad": "Zeytinli/Peynirli Açma",
+          "ad": "Simit",
           "gramaj": "1 adet",
           "enerji": ""
         },
@@ -1712,21 +1468,265 @@
         }
       ],
       "foods": [
-        "Sucuklu Omlet",
-        "Patates Kavurma",
-        "Zeytinli/Peynirli Açma",
+        "Haşlanmış Yumurta",
+        "Salçalı Sosis",
+        "Simit",
         "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "29.10.2026": {
-      "tarih": "29.10.2026",
+    "25.11.2026": {
+      "tarih": "25.11.2026",
+      "gun": "Çarşamba",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Sucuklu Omlet",
+        "Karışık Kızartma",
+        "Mozaik Kek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Sucuklu Omlet",
+          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Kızartma",
+          "gramaj": "150 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Mozaik Kek",
+          "gramaj": "50 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Sucuklu Omlet",
+        "Karışık Kızartma",
+        "Mozaik Kek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "26.11.2026": {
+      "tarih": "26.11.2026",
       "gun": "Perşembe",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
+        "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Zeytinli/Peynirli Açma",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kavurması",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Zeytinli/Peynirli Açma",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Zeytinli/Peynirli Açma",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "27.11.2026": {
+      "tarih": "27.11.2026",
+      "gun": "Cuma",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Sade Omlet",
+        "Patates Kızartması",
+        "Kek+ Bal",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Sade Omlet",
+          "gramaj": "1 adet L boy yumurta",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kızartması",
+          "gramaj": "150g",
+          "enerji": ""
+        },
+        {
+          "ad": "Kek+ Bal",
+          "gramaj": "60 g+ 20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Sade Omlet",
+        "Patates Kızartması",
+        "Kek+ Bal",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "28.11.2026": {
+      "tarih": "28.11.2026",
+      "gun": "Cumartesi",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta+ Domates Salatalık",
+        "Salçalı Sosis",
+        "Peynirli/Ispanaklı Börek",
+        "Labne Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta+ Domates Salatalık",
+          "gramaj": "1 adet L boy+100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Peynirli/Ispanaklı Börek",
+          "gramaj": "120 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Labne Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta+ Domates Salatalık",
+        "Salçalı Sosis",
+        "Peynirli/Ispanaklı Börek",
+        "Labne Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    "29.11.2026": {
+      "tarih": "29.11.2026",
+      "gun": "Pazar",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
         "Menemen",
-        "Karışık Kızartma",
-        "Mozaik Kek",
+        "Patates Kızartması",
+        "Peynirli Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -1737,12 +1737,12 @@
           "enerji": ""
         },
         {
-          "ad": "Karışık Kızartma",
+          "ad": "Patates Kızartması",
           "gramaj": "150 g",
           "enerji": ""
         },
         {
-          "ad": "Mozaik Kek",
+          "ad": "Peynirli Börek",
           "gramaj": "60 g",
           "enerji": ""
         },
@@ -1774,41 +1774,41 @@
       ],
       "foods": [
         "Menemen",
-        "Karışık Kızartma",
-        "Mozaik Kek",
+        "Patates Kızartması",
+        "Peynirli Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
-    "30.10.2026": {
-      "tarih": "30.10.2026",
-      "gun": "Cuma",
+    "30.11.2026": {
+      "tarih": "30.11.2026",
+      "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sade Omlet",
-        "Patates Kızartma",
-        "Simit",
-        "Beyaz Peynir",
+        "Haşlanmış Yumurta",
+        "Patates Salatası",
+        "Sade Poğaça",
+        "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Sade Omlet",
-          "gramaj": "1 adet L boy yumurta",
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
           "enerji": ""
         },
         {
-          "ad": "Patates Kızartma",
+          "ad": "Patates Salatası",
           "gramaj": "150 g",
           "enerji": ""
         },
         {
-          "ad": "Simit",
+          "ad": "Sade Poğaça",
           "gramaj": "1 adet",
           "enerji": ""
         },
         {
-          "ad": "Beyaz Peynir",
+          "ad": "Kaşar Peynir",
           "gramaj": "40 g",
           "enerji": ""
         },
@@ -1834,467 +1834,40 @@
         }
       ],
       "foods": [
-        "Sade Omlet",
-        "Patates Kızartma",
-        "Simit",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    "31.10.2026": {
-      "tarih": "31.10.2026",
-      "gun": "Cumartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
         "Haşlanmış Yumurta",
-        "Salçalı Sosis",
-        "Ispanaklı Börek",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Salçalı Sosis",
-          "gramaj": "100 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Ispanaklı Börek",
-          "gramaj": "120 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Labne Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Salçalı Sosis",
-        "Ispanaklı Börek",
-        "Labne Peynir",
+        "Patates Salatası",
+        "Sade Poğaça",
+        "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     }
   },
   "liste": [
     {
-      "tarih": "01.10.2026",
-      "gun": "Perşembe",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Patates Kavurma",
-        "Karışık Pizza",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kavurma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Pizza",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Kaşar Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Patates Kavurma",
-        "Karışık Pizza",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "02.10.2026",
-      "gun": "Cuma",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Menemen",
-        "Patates Kızartma",
-        "Çikolatalı Kek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Menemen",
-          "gramaj": "150 g (1 adet L boy yumurta)",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çikolatalı Kek",
-          "gramaj": "60 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Menemen",
-        "Patates Kızartma",
-        "Çikolatalı Kek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "03.10.2026",
-      "gun": "Cumartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Karışık Kızartma",
-        "Simit",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Simit",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Labne Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Karışık Kızartma",
-        "Simit",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "04.10.2026",
+      "tarih": "01.11.2026",
       "gun": "Pazar",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sade Omlet",
-        "Salçalı Sosis",
-        "Peynirli Börek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Sade Omlet",
-          "gramaj": "1 adet L boy yumurta",
-          "enerji": ""
-        },
-        {
-          "ad": "Salçalı Sosis",
-          "gramaj": "100 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Peynirli Börek",
-          "gramaj": "120 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Sade Omlet",
-        "Salçalı Sosis",
-        "Peynirli Börek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "05.10.2026",
-      "gun": "Pazartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Zeytinli/Peynirli Açma",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Zeytinli/Peynirli Açma",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Kaşar Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Zeytinli/Peynirli Açma",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "06.10.2026",
-      "gun": "Salı",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Kaşarlı Omlet",
-        "Patates Salata",
-        "Dere Otlu Poğaça",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Kaşarlı Omlet",
-          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Salata",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Dere Otlu Poğaça",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Kaşarlı Omlet",
-        "Patates Salata",
-        "Dere Otlu Poğaça",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "07.10.2026",
-      "gun": "Çarşamba",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
+        "Peynirli Omlet",
         "Sosis Kızartma",
-        "Ispanaklı Börek",
+        "Sade Poğaça",
         "Labne Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
+          "ad": "Peynirli Omlet",
+          "gramaj": "30 g beyaz p.+ 1 adet L boy yumurta",
           "enerji": ""
         },
         {
           "ad": "Sosis Kızartma",
-          "gramaj": "100 g",
+          "gramaj": "100 gr",
           "enerji": ""
         },
         {
-          "ad": "Ispanaklı Börek",
-          "gramaj": "120 g",
+          "ad": "Sade Poğaça",
+          "gramaj": "1 adet",
           "enerji": ""
         },
         {
@@ -2324,82 +1897,21 @@
         }
       ],
       "foods": [
-        "Haşlanmış Yumurta",
+        "Peynirli Omlet",
         "Sosis Kızartma",
-        "Ispanaklı Börek",
+        "Sade Poğaça",
         "Labne Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "08.10.2026",
-      "gun": "Perşembe",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Sucuklu Omlet",
-        "Karışık Kızartma",
-        "Kakaolu Kek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Sucuklu Omlet",
-          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Kakaolu Kek",
-          "gramaj": "60 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Sucuklu Omlet",
-        "Karışık Kızartma",
-        "Kakaolu Kek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "09.10.2026",
-      "gun": "Cuma",
+      "tarih": "02.11.2026",
+      "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
         "Patates Kızartması",
-        "Kek+ Bal+Tereyağ",
+        "Zeytinli/Peynirli Açma",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -2415,8 +1927,8 @@
           "enerji": ""
         },
         {
-          "ad": "Kek+ Bal+Tereyağ",
-          "gramaj": "50+20 g+10 g",
+          "ad": "Zeytinli/Peynirli Açma",
+          "gramaj": "1 adet",
           "enerji": ""
         },
         {
@@ -2448,26 +1960,331 @@
       "foods": [
         "Haşlanmış Yumurta",
         "Patates Kızartması",
-        "Kek+ Bal+Tereyağ",
+        "Zeytinli/Peynirli Açma",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "10.10.2026",
-      "gun": "Cumartesi",
+      "tarih": "03.11.2026",
+      "gun": "Salı",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Peynirli Omlet",
-        "Patates Kavurması",
-        "Peynirli Börek",
-        "Labne Peynir",
+        "Kaşarlı Omlet",
+        "Patates Kızartma",
+        "Dere Otlu Poğaça",
+        "Krem Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Peynirli Omlet",
-          "gramaj": "30 g beyaz p.+ 1 adet L boy yumurta",
+          "ad": "Kaşarlı Omlet",
+          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kızartma",
+          "gramaj": "150 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Dere Otlu Poğaça",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Krem Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Kaşarlı Omlet",
+        "Patates Kızartma",
+        "Dere Otlu Poğaça",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "04.11.2026",
+      "gun": "Çarşamba",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Sosis Kızartma",
+        "Peynirli/Ispanaklı Börek",
+        "Kaşar Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Sosis Kızartma",
+          "gramaj": "100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Peynirli/Ispanaklı Börek",
+          "gramaj": "120 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Kaşar Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Sosis Kızartma",
+        "Peynirli/Ispanaklı Börek",
+        "Kaşar Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "05.11.2026",
+      "gun": "Perşembe",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Sucuklu Omlet",
+        "Karışık Kızartma",
+        "Simit",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Sucuklu Omlet",
+          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Kızartma",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Simit",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Krem Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Sucuklu Omlet",
+        "Karışık Kızartma",
+        "Simit",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "06.11.2026",
+      "gun": "Cuma",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Haşlanmış Patates+Domates-Salatalık",
+        "Karışık Pizza",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Haşlanmış Patates+Domates-Salatalık",
+          "gramaj": "150 g+100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Pizza",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Haşlanmış Patates+Domates-Salatalık",
+        "Karışık Pizza",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "07.11.2026",
+      "gun": "Cumartesi",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Menemen",
+        "Salçalı Sosis",
+        "Patatesli Börek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Menemen",
+          "gramaj": "150 g (1 adet L boy yumurta)",
+          "enerji": ""
+        },
+        {
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Patatesli Börek",
+          "gramaj": "60 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Menemen",
+        "Salçalı Sosis",
+        "Patatesli Börek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "08.11.2026",
+      "gun": "Pazar",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Kek + Sürülebilir Çikolata",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
           "enerji": ""
         },
         {
@@ -2476,69 +2293,8 @@
           "enerji": ""
         },
         {
-          "ad": "Peynirli Börek",
-          "gramaj": "120 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Labne Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Peynirli Omlet",
-        "Patates Kavurması",
-        "Peynirli Börek",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "11.10.2026",
-      "gun": "Pazar",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Karışık Pizza",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Pizza",
-          "gramaj": "150 g",
+          "ad": "Kek + Sürülebilir Çikolata",
+          "gramaj": "60 g + 20 g",
           "enerji": ""
         },
         {
@@ -2569,21 +2325,21 @@
       ],
       "foods": [
         "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Karışık Pizza",
+        "Patates Kavurması",
+        "Kek + Sürülebilir Çikolata",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "12.10.2026",
+      "tarih": "09.11.2026",
       "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Sade Omlet",
-        "Patates Kızartma",
-        "Çikolatalı Kek",
-        "Kaşar Peynir",
+        "Patates Kızartması",
+        "Sade Poğaça",
+        "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
@@ -2593,69 +2349,8 @@
           "enerji": ""
         },
         {
-          "ad": "Patates Kızartma",
+          "ad": "Patates Kızartması",
           "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çikolatalı Kek",
-          "gramaj": "60 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Kaşar Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Sade Omlet",
-        "Patates Kızartma",
-        "Çikolatalı Kek",
-        "Kaşar Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "13.10.2026",
-      "gun": "Salı",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Salçalı Sosis",
-        "Sade Poğaça",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Salçalı Sosis",
-          "gramaj": "100 g",
           "enerji": ""
         },
         {
@@ -2690,204 +2385,21 @@
         }
       ],
       "foods": [
-        "Haşlanmış Yumurta",
-        "Salçalı Sosis",
+        "Sade Omlet",
+        "Patates Kızartması",
         "Sade Poğaça",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "14.10.2026",
-      "gun": "Çarşamba",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Kaşarlı Omlet",
-        "Karışık Kızartma",
-        "Zeytinli/Peynirli Açma",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Kaşarlı Omlet",
-          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Zeytinli/Peynirli Açma",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Kaşarlı Omlet",
-        "Karışık Kızartma",
-        "Zeytinli/Peynirli Açma",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "15.10.2026",
-      "gun": "Perşembe",
+      "tarih": "10.11.2026",
+      "gun": "Salı",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
-        "Patates Salata",
-        "Sürülebilir Çikolata+ Kek",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Salata",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Sürülebilir Çikolata+ Kek",
-          "gramaj": "20 g +50gr",
-          "enerji": ""
-        },
-        {
-          "ad": "Labne Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Patates Salata",
-        "Sürülebilir Çikolata+ Kek",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "16.10.2026",
-      "gun": "Cuma",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Menemen",
-        "Patates Kızartma",
-        "Simit",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Menemen",
-          "gramaj": "150 g (1 adet L boy yumurta)",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Simit",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Krem Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Menemen",
-        "Patates Kızartma",
-        "Simit",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "17.10.2026",
-      "gun": "Cumartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Karışık Kızartma",
-        "Peynirli Börek",
+        "Salçalı Sosis",
+        "Peynirli/Ispanaklı Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -2898,12 +2410,12 @@
           "enerji": ""
         },
         {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 g",
           "enerji": ""
         },
         {
-          "ad": "Peynirli Börek",
+          "ad": "Peynirli/Ispanaklı Börek",
           "gramaj": "120 g",
           "enerji": ""
         },
@@ -2935,19 +2447,263 @@
       ],
       "foods": [
         "Haşlanmış Yumurta",
-        "Karışık Kızartma",
-        "Peynirli Börek",
+        "Salçalı Sosis",
+        "Peynirli/Ispanaklı Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "18.10.2026",
+      "tarih": "11.11.2026",
+      "gun": "Çarşamba",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Peynirli Omlet",
+        "Karışık Kızartma",
+        "Zeytinli/Peynirli Açma",
+        "Kaşar Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Peynirli Omlet",
+          "gramaj": "30 g beyaz p.+ 1 adet L boy yumurta",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Kızartma",
+          "gramaj": "150 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Zeytinli/Peynirli Açma",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Kaşar Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Peynirli Omlet",
+        "Karışık Kızartma",
+        "Zeytinli/Peynirli Açma",
+        "Kaşar Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "12.11.2026",
+      "gun": "Perşembe",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Patates Kızartması",
+        "Domates-Salatalık",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kızartması",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Domates-Salatalık",
+          "gramaj": "100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Patates Kızartması",
+        "Domates-Salatalık",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "13.11.2026",
+      "gun": "Cuma",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Menemen",
+        "Patates Salatası",
+        "Simit",
+        "Labne Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Menemen",
+          "gramaj": "150 g (1 adet L boy yumurta)",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Salatası",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Simit",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Labne Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Menemen",
+        "Patates Salatası",
+        "Simit",
+        "Labne Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "14.11.2026",
+      "gun": "Cumartesi",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
+        "Salçalı Sosis",
+        "Ispanaklı Börek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Ispanaklı Börek",
+          "gramaj": "60 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Salçalı Sosis",
+        "Ispanaklı Börek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "15.11.2026",
       "gun": "Pazar",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Sucuklu Omlet",
-        "Patates Kavurma",
+        "Patates Kızartması",
         "Dere Otlu Poğaça",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
@@ -2959,8 +2715,8 @@
           "enerji": ""
         },
         {
-          "ad": "Patates Kavurma",
-          "gramaj": "150 g",
+          "ad": "Patates Kızartması",
+          "gramaj": "150g",
           "enerji": ""
         },
         {
@@ -2996,20 +2752,20 @@
       ],
       "foods": [
         "Sucuklu Omlet",
-        "Patates Kavurma",
+        "Patates Kızartması",
         "Dere Otlu Poğaça",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "19.10.2026",
+      "tarih": "16.11.2026",
       "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
-        "Sosis Kızartma",
-        "Reçel",
+        "Patates Kızartması",
+        "Sade Poğaça",
         "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -3020,13 +2776,13 @@
           "enerji": ""
         },
         {
-          "ad": "Sosis Kızartma",
-          "gramaj": "100 g",
+          "ad": "Patates Kızartması",
+          "gramaj": "150 g",
           "enerji": ""
         },
         {
-          "ad": "Reçel",
-          "gramaj": "20 g",
+          "ad": "Sade Poğaça",
+          "gramaj": "1 adet",
           "enerji": ""
         },
         {
@@ -3057,20 +2813,20 @@
       ],
       "foods": [
         "Haşlanmış Yumurta",
-        "Sosis Kızartma",
-        "Reçel",
+        "Patates Kızartması",
+        "Sade Poğaça",
         "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "20.10.2026",
+      "tarih": "17.11.2026",
       "gun": "Salı",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Peynirli Omlet",
-        "Patates Kızartma",
-        "Karışık Pizza",
+        "Sosis Kızartma",
+        "Simit",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -3081,13 +2837,13 @@
           "enerji": ""
         },
         {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
+          "ad": "Sosis Kızartma",
+          "gramaj": "100 gr",
           "enerji": ""
         },
         {
-          "ad": "Karışık Pizza",
-          "gramaj": "150 g",
+          "ad": "Simit",
+          "gramaj": "1 adet",
           "enerji": ""
         },
         {
@@ -3118,20 +2874,142 @@
       ],
       "foods": [
         "Peynirli Omlet",
-        "Patates Kızartma",
-        "Karışık Pizza",
+        "Sosis Kızartma",
+        "Simit",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "21.10.2026",
+      "tarih": "18.11.2026",
       "gun": "Çarşamba",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Karışık Pizza",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kavurması",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Pizza",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Krem Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Karışık Pizza",
+        "Krem Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "19.11.2026",
+      "gun": "Perşembe",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Sade Omlet",
+        "Sosis Kızartma+ Domates-Salatalık",
+        "Kek +Reçel",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Sade Omlet",
+          "gramaj": "1 adet L boy yumurta",
+          "enerji": ""
+        },
+        {
+          "ad": "Sosis Kızartma+ Domates-Salatalık",
+          "gramaj": "100 g+100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Kek +Reçel",
+          "gramaj": "60 g+ 20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Sade Omlet",
+        "Sosis Kızartma+ Domates-Salatalık",
+        "Kek +Reçel",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "20.11.2026",
+      "gun": "Cuma",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta",
         "Karışık Kızartma",
-        "Sade Poğaça",
+        "Zeytinli/Peynirli Açma",
         "Labne Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -3147,7 +3025,7 @@
           "enerji": ""
         },
         {
-          "ad": "Sade Poğaça",
+          "ad": "Zeytinli/Peynirli Açma",
           "gramaj": "1 adet",
           "enerji": ""
         },
@@ -3180,35 +3058,35 @@
       "foods": [
         "Haşlanmış Yumurta",
         "Karışık Kızartma",
-        "Sade Poğaça",
+        "Zeytinli/Peynirli Açma",
         "Labne Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "22.10.2026",
-      "gun": "Perşembe",
+      "tarih": "21.11.2026",
+      "gun": "Cumartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sade Omlet",
-        "Patates Salata",
-        "Çikolatalı Kek",
+        "Kaşarlı Omlet",
+        "Patates Salatası",
+        "Peynirli Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Sade Omlet",
-          "gramaj": "1 adet L boy yumurta",
+          "ad": "Kaşarlı Omlet",
+          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
           "enerji": ""
         },
         {
-          "ad": "Patates Salata",
+          "ad": "Patates Salatası",
           "gramaj": "150 g",
           "enerji": ""
         },
         {
-          "ad": "Çikolatalı Kek",
+          "ad": "Peynirli Börek",
           "gramaj": "60 g",
           "enerji": ""
         },
@@ -3239,21 +3117,21 @@
         }
       ],
       "foods": [
-        "Sade Omlet",
-        "Patates Salata",
-        "Çikolatalı Kek",
+        "Kaşarlı Omlet",
+        "Patates Salatası",
+        "Peynirli Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "23.10.2026",
-      "gun": "Cuma",
+      "tarih": "22.11.2026",
+      "gun": "Pazar",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
         "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Peynirli Börek",
+        "Sosis Kızartma",
+        "Peynirli/Ispanaklı Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -3264,12 +3142,12 @@
           "enerji": ""
         },
         {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
+          "ad": "Sosis Kızartma",
+          "gramaj": "100 gr",
           "enerji": ""
         },
         {
-          "ad": "Peynirli Börek",
+          "ad": "Peynirli/Ispanaklı Börek",
           "gramaj": "120 g",
           "enerji": ""
         },
@@ -3301,153 +3179,31 @@
       ],
       "foods": [
         "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Peynirli Börek",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "24.10.2026",
-      "gun": "Cumartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Kaşarlı Omlet",
-        "Karışık Kızartma",
-        "Sucuklu Yumurta",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Kaşarlı Omlet",
-          "gramaj": "25 g kaşar p.+ 1 adet L boy yumurta",
-          "enerji": ""
-        },
-        {
-          "ad": "Karışık Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Sucuklu Yumurta",
-          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
-          "enerji": ""
-        },
-        {
-          "ad": "Krem Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Kaşarlı Omlet",
-        "Karışık Kızartma",
-        "Sucuklu Yumurta",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "25.10.2026",
-      "gun": "Pazar",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
         "Sosis Kızartma",
-        "Simit",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Sosis Kızartma",
-          "gramaj": "100 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Simit",
-          "gramaj": "1 adet",
-          "enerji": ""
-        },
-        {
-          "ad": "Beyaz Peynir",
-          "gramaj": "40 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Sosis Kızartma",
-        "Simit",
+        "Peynirli/Ispanaklı Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "26.10.2026",
+      "tarih": "23.11.2026",
       "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sucuklu Omlet",
-        "Patates Salatası",
+        "Peynirli Omlet",
+        "Patates Kızartması",
         "Dere Otlu Poğaça",
-        "Krem Peynir",
+        "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Sucuklu Omlet",
-          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
+          "ad": "Peynirli Omlet",
+          "gramaj": "30 g beyaz p.+ 1 adet L boy yumurta",
           "enerji": ""
         },
         {
-          "ad": "Patates Salatası",
+          "ad": "Patates Kızartması",
           "gramaj": "150 g",
           "enerji": ""
         },
@@ -3457,67 +3213,6 @@
           "enerji": ""
         },
         {
-          "ad": "Krem Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Sucuklu Omlet",
-        "Patates Salatası",
-        "Dere Otlu Poğaça",
-        "Krem Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "27.10.2026",
-      "gun": "Salı",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Kek+ Bal+Tereyağ",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Patates Kızartma",
-          "gramaj": "150 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Kek+ Bal+Tereyağ",
-          "gramaj": "50g+20 g+10 g",
-          "enerji": ""
-        },
-        {
           "ad": "Beyaz Peynir",
           "gramaj": "40 g",
           "enerji": ""
@@ -3544,37 +3239,37 @@
         }
       ],
       "foods": [
-        "Haşlanmış Yumurta",
-        "Patates Kızartma",
-        "Kek+ Bal+Tereyağ",
+        "Peynirli Omlet",
+        "Patates Kızartması",
+        "Dere Otlu Poğaça",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "28.10.2026",
-      "gun": "Çarşamba",
+      "tarih": "24.11.2026",
+      "gun": "Salı",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sucuklu Omlet",
-        "Patates Kavurma",
-        "Zeytinli/Peynirli Açma",
+        "Haşlanmış Yumurta",
+        "Salçalı Sosis",
+        "Simit",
         "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Sucuklu Omlet",
-          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
           "enerji": ""
         },
         {
-          "ad": "Patates Kavurma",
-          "gramaj": "150 g",
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 g",
           "enerji": ""
         },
         {
-          "ad": "Zeytinli/Peynirli Açma",
+          "ad": "Simit",
           "gramaj": "1 adet",
           "enerji": ""
         },
@@ -3605,21 +3300,265 @@
         }
       ],
       "foods": [
-        "Sucuklu Omlet",
-        "Patates Kavurma",
-        "Zeytinli/Peynirli Açma",
+        "Haşlanmış Yumurta",
+        "Salçalı Sosis",
+        "Simit",
         "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "29.10.2026",
+      "tarih": "25.11.2026",
+      "gun": "Çarşamba",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Sucuklu Omlet",
+        "Karışık Kızartma",
+        "Mozaik Kek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Sucuklu Omlet",
+          "gramaj": "1 adet L boy yumurta+ 25 g beyaz etli sucuk",
+          "enerji": ""
+        },
+        {
+          "ad": "Karışık Kızartma",
+          "gramaj": "150 gr",
+          "enerji": ""
+        },
+        {
+          "ad": "Mozaik Kek",
+          "gramaj": "50 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Sucuklu Omlet",
+        "Karışık Kızartma",
+        "Mozaik Kek",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "26.11.2026",
       "gun": "Perşembe",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
+        "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Zeytinli/Peynirli Açma",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kavurması",
+          "gramaj": "150 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Zeytinli/Peynirli Açma",
+          "gramaj": "1 adet",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta",
+        "Patates Kavurması",
+        "Zeytinli/Peynirli Açma",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "27.11.2026",
+      "gun": "Cuma",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Sade Omlet",
+        "Patates Kızartması",
+        "Kek+ Bal",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Sade Omlet",
+          "gramaj": "1 adet L boy yumurta",
+          "enerji": ""
+        },
+        {
+          "ad": "Patates Kızartması",
+          "gramaj": "150g",
+          "enerji": ""
+        },
+        {
+          "ad": "Kek+ Bal",
+          "gramaj": "60 g+ 20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Beyaz Peynir",
+          "gramaj": "40 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Sade Omlet",
+        "Patates Kızartması",
+        "Kek+ Bal",
+        "Beyaz Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "28.11.2026",
+      "gun": "Cumartesi",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
+        "Haşlanmış Yumurta+ Domates Salatalık",
+        "Salçalı Sosis",
+        "Peynirli/Ispanaklı Börek",
+        "Labne Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ],
+      "ogeler": [
+        {
+          "ad": "Haşlanmış Yumurta+ Domates Salatalık",
+          "gramaj": "1 adet L boy+100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Salçalı Sosis",
+          "gramaj": "100 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Peynirli/Ispanaklı Börek",
+          "gramaj": "120 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Labne Peynir",
+          "gramaj": "20 g",
+          "enerji": ""
+        },
+        {
+          "ad": "*Siyah/Yeşil Zeytin",
+          "gramaj": "30 g",
+          "enerji": ""
+        },
+        {
+          "ad": "Çeyrek Ekmek",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "500 ml Su",
+          "gramaj": "",
+          "enerji": ""
+        },
+        {
+          "ad": "**Çay/Bitki Çayı",
+          "gramaj": "",
+          "enerji": ""
+        }
+      ],
+      "foods": [
+        "Haşlanmış Yumurta+ Domates Salatalık",
+        "Salçalı Sosis",
+        "Peynirli/Ispanaklı Börek",
+        "Labne Peynir",
+        "*Siyah/Yeşil Zeytin"
+      ]
+    },
+    {
+      "tarih": "29.11.2026",
+      "gun": "Pazar",
+      "ogun": "Sabah Kahvaltısı",
+      "yemekler": [
         "Menemen",
-        "Karışık Kızartma",
-        "Mozaik Kek",
+        "Patates Kızartması",
+        "Peynirli Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
@@ -3630,12 +3569,12 @@
           "enerji": ""
         },
         {
-          "ad": "Karışık Kızartma",
+          "ad": "Patates Kızartması",
           "gramaj": "150 g",
           "enerji": ""
         },
         {
-          "ad": "Mozaik Kek",
+          "ad": "Peynirli Börek",
           "gramaj": "60 g",
           "enerji": ""
         },
@@ -3667,41 +3606,41 @@
       ],
       "foods": [
         "Menemen",
-        "Karışık Kızartma",
-        "Mozaik Kek",
+        "Patates Kızartması",
+        "Peynirli Börek",
         "Beyaz Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     },
     {
-      "tarih": "30.10.2026",
-      "gun": "Cuma",
+      "tarih": "30.11.2026",
+      "gun": "Pazartesi",
       "ogun": "Sabah Kahvaltısı",
       "yemekler": [
-        "Sade Omlet",
-        "Patates Kızartma",
-        "Simit",
-        "Beyaz Peynir",
+        "Haşlanmış Yumurta",
+        "Patates Salatası",
+        "Sade Poğaça",
+        "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ],
       "ogeler": [
         {
-          "ad": "Sade Omlet",
-          "gramaj": "1 adet L boy yumurta",
+          "ad": "Haşlanmış Yumurta",
+          "gramaj": "1 adet L boy",
           "enerji": ""
         },
         {
-          "ad": "Patates Kızartma",
+          "ad": "Patates Salatası",
           "gramaj": "150 g",
           "enerji": ""
         },
         {
-          "ad": "Simit",
+          "ad": "Sade Poğaça",
           "gramaj": "1 adet",
           "enerji": ""
         },
         {
-          "ad": "Beyaz Peynir",
+          "ad": "Kaşar Peynir",
           "gramaj": "40 g",
           "enerji": ""
         },
@@ -3727,71 +3666,10 @@
         }
       ],
       "foods": [
-        "Sade Omlet",
-        "Patates Kızartma",
-        "Simit",
-        "Beyaz Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ]
-    },
-    {
-      "tarih": "31.10.2026",
-      "gun": "Cumartesi",
-      "ogun": "Sabah Kahvaltısı",
-      "yemekler": [
         "Haşlanmış Yumurta",
-        "Salçalı Sosis",
-        "Ispanaklı Börek",
-        "Labne Peynir",
-        "*Siyah/Yeşil Zeytin"
-      ],
-      "ogeler": [
-        {
-          "ad": "Haşlanmış Yumurta",
-          "gramaj": "1 adet L boy",
-          "enerji": ""
-        },
-        {
-          "ad": "Salçalı Sosis",
-          "gramaj": "100 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Ispanaklı Börek",
-          "gramaj": "120 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Labne Peynir",
-          "gramaj": "20 g",
-          "enerji": ""
-        },
-        {
-          "ad": "*Siyah/Yeşil Zeytin",
-          "gramaj": "30 g",
-          "enerji": ""
-        },
-        {
-          "ad": "Çeyrek Ekmek",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "500 ml Su",
-          "gramaj": "",
-          "enerji": ""
-        },
-        {
-          "ad": "**Çay/Bitki Çayı",
-          "gramaj": "",
-          "enerji": ""
-        }
-      ],
-      "foods": [
-        "Haşlanmış Yumurta",
-        "Salçalı Sosis",
-        "Ispanaklı Börek",
-        "Labne Peynir",
+        "Patates Salatası",
+        "Sade Poğaça",
+        "Kaşar Peynir",
         "*Siyah/Yeşil Zeytin"
       ]
     }

@@ -882,12 +882,16 @@ const QuoteManager = (() => {
     if (closeBtn) closeBtn.addEventListener('click', closeModal);
     if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
 
-    modal.addEventListener('click', (e) => {
-      const rect = modal.getBoundingClientRect();
-      const inBox = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
-                     rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
-      if (!inBox) closeModal();
-    });
+    // Fallback for browsers without closedby support
+    if (!('closedBy' in HTMLDialogElement.prototype)) {
+      modal.addEventListener('click', (e) => {
+        if (e.target !== modal) return;
+        const rect = modal.getBoundingClientRect();
+        const inBox = (rect.top <= e.clientY && e.clientY <= rect.top + rect.height &&
+                       rect.left <= e.clientX && e.clientX <= rect.left + rect.width);
+        if (!inBox) closeModal();
+      });
+    }
 
     if (textInput && charCount) {
       textInput.addEventListener('input', () => {
