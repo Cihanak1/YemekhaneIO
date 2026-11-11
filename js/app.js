@@ -678,12 +678,124 @@ function escapeRegex(s) {
 }
 
 /* ═══════════════════════════════════════════════════════════════
+   ÖZEL DUYURU / YAZI ALANI (KULLANICI TANIMLI BANNER)
+   ═══════════════════════════════════════════════════════════════ */
+function setupCustomBanner() {
+  const bannerView   = $('banner-view');
+  const bannerForm   = $('banner-form');
+  const bannerText   = $('banner-text');
+  const bannerInput  = $('banner-input');
+  const charCount    = $('banner-char-count');
+  const editBtn      = $('btn-edit-banner');
+  const deleteBtn    = $('btn-delete-banner');
+  const cancelBtn    = $('btn-cancel-banner');
+  const STORAGE_KEY  = 'yemekhane_custom_banner_text';
+  const PLACEHOLDER  = 'Buraya sitenin önünde kocaman görünecek özel bir duyuru, not veya yazı girmek için tıklayın...';
+
+  if (!bannerView || !bannerForm || !bannerText || !bannerInput) return;
+
+  function loadBanner() {
+    const saved = (localStorage.getItem(STORAGE_KEY) || '').trim();
+    if (saved) {
+      bannerText.textContent = saved;
+      bannerText.classList.remove('is-placeholder');
+      if (deleteBtn) deleteBtn.hidden = false;
+    } else {
+      bannerText.textContent = PLACEHOLDER;
+      bannerText.classList.add('is-placeholder');
+      if (deleteBtn) deleteBtn.hidden = true;
+    }
+  }
+
+  function startEditing() {
+    const current = (localStorage.getItem(STORAGE_KEY) || '').trim();
+    bannerInput.value = current;
+    if (charCount) charCount.textContent = `${bannerInput.value.length} / 300`;
+    bannerView.hidden = true;
+    bannerForm.hidden = false;
+    bannerInput.focus();
+    bannerInput.setSelectionRange(bannerInput.value.length, bannerInput.value.length);
+  }
+
+  function stopEditing() {
+    bannerForm.hidden = true;
+    bannerView.hidden = false;
+    loadBanner();
+  }
+
+  bannerView.addEventListener('click', (e) => {
+    if (e.target.closest('#btn-delete-banner')) return;
+    startEditing();
+  });
+
+  bannerView.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+      e.preventDefault();
+      startEditing();
+    }
+  });
+
+  if (editBtn) {
+    editBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      startEditing();
+    });
+  }
+
+  if (deleteBtn) {
+    deleteBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (confirm('Özel yazıyı silmek istiyor musunuz?')) {
+        localStorage.removeItem(STORAGE_KEY);
+        loadBanner();
+        showToast('Özel yazı silindi.');
+      }
+    });
+  }
+
+  if (cancelBtn) {
+    cancelBtn.addEventListener('click', () => {
+      stopEditing();
+    });
+  }
+
+  bannerInput.addEventListener('input', () => {
+    if (charCount) charCount.textContent = `${bannerInput.value.length} / 300`;
+  });
+
+  bannerInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      stopEditing();
+    }
+  });
+
+  bannerForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const val = bannerInput.value.trim();
+    if (val) {
+      localStorage.setItem(STORAGE_KEY, val);
+      showToast('Özel yazı kaydedildi ve sitenin önünde yayınlandı.');
+    } else {
+      localStorage.removeItem(STORAGE_KEY);
+      showToast('Özel yazı temizlendi.');
+    }
+    stopEditing();
+  });
+
+  loadBanner();
+}
+
+/* ═══════════════════════════════════════════════════════════════
    ETKİNLİKLER VE BAĞLANTILAR
    ═══════════════════════════════════════════════════════════════ */
 function bindEvents() {
   $('prev-day').addEventListener('click', () => go(-1));
   $('next-day').addEventListener('click', () => go(1));
   $('today-btn').addEventListener('click', () => selectDate(state.today));
+
+  // Ön kısım özel duyuru/yazı alanı
+  setupCustomBanner();
 
   // Gün şeridi seçimi
   $('day-strip-list').addEventListener('click', (e) => {

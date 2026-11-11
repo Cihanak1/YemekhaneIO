@@ -1,4 +1,4 @@
-const CACHE_NAME = 'yemekhane-v5.3';
+const CACHE_NAME = 'yemekhane-v5.4';
 const PRECACHE_URLS = [
   './',
   './index.html',
