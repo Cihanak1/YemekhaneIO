@@ -153,6 +153,35 @@ function todayKey(now = new Date()) {
   return `${p.day}.${p.month}.${p.year}`;
 }
 
+/**
+ * Gün gün takip sistemi: Bugünün menüsünü akıllı tespit eder.
+ * Cihaz yılı ile menü yılı farklı olsa bile gün ve aya göre doğru günü eşleştirir.
+ */
+function resolveTodayKey(now = new Date()) {
+  const raw = todayKey(now);
+  if (!state.dates || state.dates.length === 0) return raw;
+  if (state.dates.includes(raw)) return raw;
+
+  const [d, m] = raw.split('.');
+  const matched = state.dates.find(k => {
+    const parts = k.split('.');
+    return parts[0] === d && parts[1] === m;
+  });
+  if (matched) return matched;
+
+  const sameMonth = state.dates.filter(k => k.split('.')[1] === m);
+  if (sameMonth.length > 0) {
+    const targetDay = parseInt(d, 10);
+    return sameMonth.reduce((closest, candidate) => {
+      const c = parseInt(candidate.split('.')[0], 10);
+      const b = parseInt(closest.split('.')[0], 10);
+      return Math.abs(c - targetDay) < Math.abs(b - targetDay) ? candidate : closest;
+    }, sameMonth[0]);
+  }
+
+  return state.dates[0];
+}
+
 /* ── İKON SEÇİMİ ─────────────────────────────────────────────── */
 function pickIcon(name, kind, catNum) {
   const s = name.toLocaleLowerCase('tr');
@@ -288,9 +317,10 @@ function buildStrip() {
 
   list.innerHTML = state.dates.map(key => {
     const d = describeDate(key);
-    return `<li><button type="button" class="day-chip${d.weekend ? ' is-weekend' : ''}"` +
-      ` data-date="${key}" aria-pressed="false" aria-label="${d.full}, ${d.dayName}"` +
-      `${key === state.today ? ' aria-current="date"' : ''}>` +
+    const isToday = key === state.today;
+    return `<li><button type="button" class="day-chip${d.weekend ? ' is-weekend' : ''}${isToday ? ' is-today' : ''}"` +
+      ` data-date="${key}" aria-pressed="false" aria-label="${d.full}, ${d.dayName}${isToday ? ' (Bugün)' : ''}"` +
+      `${isToday ? ' aria-current="date"' : ''}>` +
       `<span class="day-chip-wd">${d.short}</span>` +
       `<span class="day-chip-num">${d.dayNum}</span>` +
       `</button></li>`;
@@ -774,7 +804,7 @@ function tick() {
   const now = new Date();
   $('header-clock').textContent = timeFmt.format(now);
 
-  const t = todayKey(now);
+  const t = resolveTodayKey(now);
   if (t !== state.today && state.sources) {
     const wasFollowing = state.selected === state.today;
     state.today = t;
@@ -838,13 +868,9 @@ async function main() {
 
   recomputeBounds();
 
-  // Bugün menü listesinde yoksa (ör. farklı ayda açıldıysa) menüsü olan en yakın güne ayarla
-  if (!dateSet.has(state.today) && state.dates.length > 0) {
-    const todayMs = keyToUTC(state.today);
-    state.selected = state.dates.reduce((closest, candidate) =>
-      Math.abs(keyToUTC(candidate) - todayMs) < Math.abs(keyToUTC(closest) - todayMs) ? candidate : closest
-    , state.dates[0]);
-  }
+  // Gün gün takip sistemi: Bugünün menüsünü doğrudan tespit et ve aç
+  state.today = resolveTodayKey(now);
+  state.selected = state.today;
 
   // Tarih seçici girdisinin sınırlarını ayarla
   const datePicker = $('date-picker-input');
